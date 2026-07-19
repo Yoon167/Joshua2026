@@ -95,15 +95,15 @@
 
                     <div class="contact-panel reveal reveal-delay">
                         <p class="eyebrow">Quick Message</p>
-                        <h2>Write once, send through your email app.</h2>
+                        <h2>Send a message directly to my studio.</h2>
                         <form id="contact-form" class="contact-form">
                             <label>
                                 <span>Your Name</span>
-                                <input type="text" name="name" required>
+                                <input type="text" name="name" autocomplete="name" required>
                             </label>
                             <label>
                                 <span>Your Email</span>
-                                <input type="email" name="email" required>
+                                <input type="email" name="email" autocomplete="email" required>
                             </label>
                             <label>
                                 <span>Subject</span>
@@ -113,7 +113,7 @@
                                 <span>Message</span>
                                 <textarea name="message" rows="6" required></textarea>
                             </label>
-                            <button type="submit" class="button button-primary">Compose Email</button>
+                            <button type="submit" class="button button-primary">Send Message</button>
                             <p id="form-message" class="form-message" aria-live="polite"></p>
                         </form>
                     </div>
@@ -131,11 +131,13 @@
                     <a href="projects.html">Projects</a>
                     <a href="mailto:bajaojoshua2@gmail.com">Email</a>
                     <a href="tel:+97430822657">Call</a>
+                    <a href="admin.html">Owner Login</a>
                 </div>
             </div>
         </footer>
     </div>
 
     <script src="script.js"></script>
+    <script type="module" src="firebase.js"></script>
 </body>
 </html>

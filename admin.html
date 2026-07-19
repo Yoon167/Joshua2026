@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owner Console | Joshua Bajao</title>
+    <meta name="description" content="Private owner console for portfolio inquiries.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="admin">
+    <div class="site-shell">
+        <header class="topbar">
+            <nav class="navbar container">
+                <a class="brand" href="index.html" aria-label="Joshua Bajao home page">
+                    <span class="brand-mark">JB</span>
+                    <span class="brand-text">
+                        <strong>Joshua Bajao</strong>
+                        <small>Mobile App Developer</small>
+                    </span>
+                </a>
+                <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Open navigation">
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="nav-panel">
+                    <ul class="nav-links">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="about.html" class="nav-link">About</a></li>
+                        <li><a href="skills.html" class="nav-link">Skills</a></li>
+                        <li><a href="experience.html" class="nav-link">Experience</a></li>
+                        <li><a href="projects.html" class="nav-link">Projects</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                    <a href="admin.html" class="button button-ghost">Owner Console</a>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class="page-hero admin-page-hero">
+                <div class="container page-hero-inner reveal">
+                    <p class="eyebrow">Private Workspace</p>
+                    <h1>Owner Console</h1>
+                    <p>Review incoming portfolio inquiries, follow up with contacts, and keep your opportunities organized in one private place.</p>
+                </div>
+            </section>
+
+            <section class="section section-light admin-section">
+                <div class="container">
+                    <section id="admin-login" class="admin-login-panel reveal">
+                        <div class="admin-login-copy">
+                            <p class="eyebrow">Secure Sign In</p>
+                            <h2>Welcome back.</h2>
+                            <p>Use your Firebase Authentication owner account to access the private inquiry desk.</p>
+                            <div class="admin-security-note">
+                                <i class="fa-solid fa-shield-halved"></i>
+                                <span>Only the configured owner account can view or manage client messages.</span>
+                            </div>
+                        </div>
+                        <form id="admin-login-form" class="admin-login-form">
+                            <label>
+                                <span>Owner Email</span>
+                                <input type="email" name="email" value="bajaojoshua2@gmail.com" autocomplete="email" required>
+                            </label>
+                            <label>
+                                <span>Password</span>
+                                <input type="password" name="password" autocomplete="current-password" required>
+                            </label>
+                            <button type="submit" class="button button-primary">Sign In Securely</button>
+                            <p id="admin-login-message" class="form-message" aria-live="polite"></p>
+                        </form>
+                    </section>
+
+                    <section id="admin-dashboard" class="admin-dashboard" hidden>
+                        <div class="dashboard-header">
+                            <div>
+                                <p class="eyebrow">Live Inquiry Desk</p>
+                                <h2>New opportunities, in view.</h2>
+                            </div>
+                            <div class="dashboard-owner-actions">
+                                <span id="admin-email"></span>
+                                <button id="admin-sign-out" class="button button-ghost" type="button">Sign Out</button>
+                            </div>
+                        </div>
+
+                        <div class="dashboard-metrics" aria-label="Inquiry counts">
+                            <article>
+                                <span>Total Inquiries</span>
+                                <strong id="total-inquiry-count">0</strong>
+                            </article>
+                            <article>
+                                <span>New Messages</span>
+                                <strong id="new-inquiry-count">0</strong>
+                            </article>
+                            <article>
+                                <span>Resolved</span>
+                                <strong id="resolved-inquiry-count">0</strong>
+                            </article>
+                        </div>
+
+                        <div class="inquiry-toolbar">
+                            <label class="inquiry-search-field">
+                                <span>Search</span>
+                                <input id="inquiry-search" type="search" placeholder="Search name, email, subject, or message">
+                            </label>
+                            <label class="inquiry-filter-field">
+                                <span>Status</span>
+                                <select id="inquiry-filter">
+                                    <option value="all">All messages</option>
+                                    <option value="new">New</option>
+                                    <option value="read">Read</option>
+                                    <option value="resolved">Resolved</option>
+                                </select>
+                            </label>
+                        </div>
+
+                        <div id="inquiry-list" class="inquiry-list" aria-live="polite">
+                            <p class="admin-empty">Loading your inquiries...</p>
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container footer-row">
+                <div>
+                    <p class="footer-title">Joshua Bajao</p>
+                    <p class="footer-copy">Private owner workspace for portfolio opportunities.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="projects.html">Projects</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+    <script type="module" src="firebase.js"></script>
+</body>
+</html>

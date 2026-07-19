@@ -110,34 +110,3 @@ internalLinks.forEach((link) => {
         }, 220);
     });
 });
-
-const contactForm = document.getElementById('contact-form');
-const formMessage = document.getElementById('form-message');
-
-if (contactForm && formMessage) {
-    contactForm.addEventListener('submit', (event) => {
-        event.preventDefault();
-
-        const formData = new FormData(contactForm);
-        const name = String(formData.get('name') || '').trim();
-        const email = String(formData.get('email') || '').trim();
-        const subject = String(formData.get('subject') || '').trim();
-        const message = String(formData.get('message') || '').trim();
-
-        if (!name || !email || !subject || !message) {
-            formMessage.textContent = 'Please complete every field before sending.';
-            return;
-        }
-
-        const body = [
-            `Name: ${name}`,
-            `Email: ${email}`,
-            '',
-            message,
-        ].join('\n');
-
-        const mailtoLink = `mailto:bajaojoshua2@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-        window.location.href = mailtoLink;
-        formMessage.textContent = 'Your email app should open with this message ready to send.';
-    });
-}
