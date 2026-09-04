@@ -242,8 +242,8 @@ ul { list-style: none; }
 .hero-inner { position: relative; z-index: 4; }
 .hero-head { max-width: 920px; }
 .hero-head h1 { font-size: clamp(2.7rem, 7.4vw, 6rem); }
-.hero-head h1 .line { display: block; overflow: hidden; }
-.hero-head h1 .line span { display: inline-block; }
+[data-split] .line { display: inline-block; overflow: hidden; vertical-align: top; }
+[data-split] .line > span { display: inline-block; }
 
 .role-rotator { margin-top: 1.6rem; height: 2.4em; overflow: hidden; position: relative; font-family: var(--f-mono); font-size: clamp(1rem, 2vw, 1.3rem); color: var(--fg-2); }
 .role-rotator .role-track { display: flex; flex-direction: column; transition: transform var(--dur-3) var(--ease-in-out); }

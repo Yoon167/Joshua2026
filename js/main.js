@@ -160,7 +160,9 @@
     /* ---------------- Word-stagger hero headline ---------------- */
     document.querySelectorAll('[data-split]').forEach((el) => {
         const words = el.textContent.trim().split(/\s+/);
-        el.innerHTML = words.map((w) => `<span class="line"><span>${w}&nbsp;</span></span>`).join('');
+        // A real space between wrappers gives the browser a valid line-break
+        // opportunity so long headlines wrap normally instead of overflowing.
+        el.innerHTML = words.map((w) => `<span class="line"><span>${w}</span></span>`).join(' ');
         if (hasGSAP && !reduced) {
             gsap.fromTo(el.querySelectorAll('.line > span'), { yPercent: 130, opacity: 0 }, {
                 yPercent: 0, opacity: 1, duration: 1, ease: 'power4.out', stagger: 0.05, delay: 0.15,
