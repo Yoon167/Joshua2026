@@ -7,61 +7,62 @@
     <meta name="description" content="Private owner console for portfolio inquiries.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body data-page="admin">
     <a class="skip-link" href="#main">Skip to content</a>
-    <div class="loader" aria-hidden="true">
-        <div class="loader-mark"><span>J</span><span>B</span><span>·</span><span>I</span><span>T</span></div>
-        <div class="loader-bar"><span></span></div>
-    </div>
+    <div class="loader" aria-hidden="true"><div class="loader-grid"><span></span><span></span><span></span><span></span></div></div>
 
-    <div class="site-shell">
-        <header class="topbar">
-            <nav class="navbar container">
-                <a class="brand" href="index.html" aria-label="Joshua Bajao home page">
-                    <span class="brand-mark">JB</span>
-                    <span class="brand-text">
-                        <strong>Joshua Bajao</strong>
-                        <small>Microsoft 365 &amp; Systems Engineer</small>
-                    </span>
+    <div class="site">
+        <header class="nav">
+            <div class="wrap nav-row">
+                <a class="mark" href="index.html" aria-label="Joshua Bajao home">
+                    <span class="mark-grid"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span>
+                    <span class="mark-text"><strong>Joshua Bajao</strong><small>Systems &amp; M365 Engineer</small></span>
                 </a>
-                <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Open navigation">
-                    <span></span><span></span>
-                </button>
-                <div class="nav-panel">
-                    <ul class="nav-links">
-                        <li><a href="index.html" class="nav-link">Home</a></li>
-                        <li><a href="about.html" class="nav-link">About</a></li>
-                        <li><a href="skills.html" class="nav-link">Skills</a></li>
-                        <li><a href="experience.html" class="nav-link">Experience</a></li>
-                        <li><a href="projects.html" class="nav-link">Projects</a></li>
-                        <li><a href="contact.html" class="nav-link">Contact</a></li>
-                    </ul>
-                    <a href="admin.html" class="button button-ghost" data-magnetic>Owner Console</a>
+                <nav class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="skills.html">Skills</a>
+                    <a href="experience.html">Experience</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+                <div class="nav-status">
+                    <span class="status-pill"><span></span>Owner console</span>
+                    <button class="burger" type="button" aria-expanded="false" aria-label="Open menu"><span></span><span></span><span></span></button>
                 </div>
-            </nav>
+            </div>
         </header>
 
+        <nav class="nav-full" aria-hidden="true">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="experience.html">Experience</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+            <div class="nav-full-foot"><span>bajaojoshua2@gmail.com</span><span>Qatar</span></div>
+        </nav>
+
         <main id="main">
-            <section class="page-hero admin-page-hero mouse-glow">
-                <div class="bg-grid"></div>
-                <div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
-                <div class="container page-hero-inner reveal">
-                    <p class="eyebrow">Private Workspace</p>
-                    <h1>Owner Console</h1>
-                    <p>Review incoming portfolio inquiries, follow up with contacts, and keep opportunities organized in one private place.</p>
+            <section class="band" style="padding-top:9rem; padding-bottom:2rem;">
+                <div class="fx-grid"></div>
+                <div class="wrap" style="position:relative; z-index:2;">
+                    <p class="tag reveal">Private workspace</p>
+                    <h1 data-split style="margin-top:1rem; font-size:clamp(2rem, 4.6vw, 3.2rem); max-width:640px;">Owner Console</h1>
+                    <p class="reveal" style="margin-top:1.2rem; max-width:520px; font-size:1.02rem;">Review incoming portfolio inquiries, follow up with contacts, and keep opportunities organized in one private place.</p>
                 </div>
             </section>
 
-            <section class="section section-light admin-section">
-                <div class="container">
+            <section class="band" style="padding-top:1rem;">
+                <div class="wrap">
                     <section id="admin-login" class="admin-login-panel reveal">
                         <div class="admin-login-copy">
-                            <p class="eyebrow">Secure Sign In</p>
-                            <h2>Welcome back.</h2>
+                            <p class="tag">Secure sign in</p>
+                            <h2 style="margin-top:0.9rem;">Welcome back.</h2>
                             <p>Use your Firebase Authentication owner account to access the private inquiry desk.</p>
                             <div class="admin-security-note">
                                 <i class="fa-solid fa-shield-halved"></i>
@@ -69,14 +70,8 @@
                             </div>
                         </div>
                         <form id="admin-login-form" class="admin-login-form">
-                            <label>
-                                <span>Owner Email</span>
-                                <input type="email" name="email" value="bajaojoshua2@gmail.com" autocomplete="email" required>
-                            </label>
-                            <label>
-                                <span>Password</span>
-                                <input type="password" name="password" autocomplete="current-password" required>
-                            </label>
+                            <label>Owner email<input type="email" name="email" value="bajaojoshua2@gmail.com" autocomplete="email" required></label>
+                            <label>Password<input type="password" name="password" autocomplete="current-password" required></label>
                             <button type="submit" class="button button-primary" data-magnetic>Sign In Securely</button>
                             <p id="admin-login-message" class="form-message" aria-live="polite"></p>
                         </form>
@@ -84,10 +79,7 @@
 
                     <section id="admin-dashboard" class="admin-dashboard" hidden>
                         <div class="dashboard-header">
-                            <div>
-                                <p class="eyebrow">Live Inquiry Desk</p>
-                                <h2>New opportunities, in view.</h2>
-                            </div>
+                            <div><p class="tag">Live inquiry desk</p><h2 style="margin-top:0.9rem;">New opportunities, in view.</h2></div>
                             <div class="dashboard-owner-actions">
                                 <span id="admin-email"></span>
                                 <button id="admin-sign-out" class="button button-ghost" type="button" data-magnetic>Sign Out</button>
@@ -101,12 +93,8 @@
                         </div>
 
                         <div class="inquiry-toolbar">
-                            <label class="inquiry-search-field">
-                                <span>Search</span>
-                                <input id="inquiry-search" type="search" placeholder="Search name, email, subject, or message">
-                            </label>
-                            <label class="inquiry-filter-field">
-                                <span>Status</span>
+                            <label class="inquiry-search-field">Search<input id="inquiry-search" type="search" placeholder="Search name, email, subject, or message"></label>
+                            <label class="inquiry-filter-field">Status
                                 <select id="inquiry-filter">
                                     <option value="all">All messages</option>
                                     <option value="new">New</option>
@@ -124,17 +112,15 @@
             </section>
         </main>
 
-        <footer class="footer">
-            <div class="container footer-row">
-                <div>
-                    <p class="footer-title">Joshua Bajao</p>
-                    <p class="footer-copy">Private owner workspace for portfolio opportunities.</p>
+        <footer class="mega-footer">
+            <div class="wrap">
+                <div class="mega-footer-top">
+                    <div><p class="mega-footer-word">Joshua Bajao</p><p class="mega-footer-lead">Private owner workspace for portfolio opportunities.</p></div>
+                    <div class="mega-footer-col"><h4>Sitemap</h4><ul><li><a href="index.html">Home</a></li><li><a href="contact.html">Contact</a></li><li><a href="projects.html">Projects</a></li></ul></div>
+                    <div class="mega-footer-col"><h4>Connect</h4><ul><li><a href="mailto:bajaojoshua2@gmail.com">Email</a></li></ul></div>
+                    <div class="mega-footer-col"><h4>Status</h4><ul><li><a href="contact.html">Open to work</a></li></ul></div>
                 </div>
-                <div class="footer-links">
-                    <a href="index.html">Home</a>
-                    <a href="contact.html">Contact</a>
-                    <a href="projects.html">Projects</a>
-                </div>
+                <div class="mega-footer-bottom"><span>© 2026 Joshua Bajao. All rights reserved.</span><a href="#main">Back to top ↑</a></div>
             </div>
         </footer>
     </div>

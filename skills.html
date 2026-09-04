@@ -7,192 +7,146 @@
     <meta name="description" content="Explore Joshua Bajao's Microsoft 365, networking, systems administration, and cloud security skills.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body data-page="skills">
     <a class="skip-link" href="#main">Skip to content</a>
-    <div class="loader" aria-hidden="true">
-        <div class="loader-mark"><span>J</span><span>B</span><span>·</span><span>I</span><span>T</span></div>
-        <div class="loader-bar"><span></span></div>
-    </div>
+    <div class="loader" aria-hidden="true"><div class="loader-grid"><span></span><span></span><span></span><span></span></div></div>
 
-    <svg width="0" height="0" style="position:absolute;" aria-hidden="true">
-        <defs>
-            <linearGradient id="meterGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="#2563eb"></stop>
-                <stop offset="100%" stop-color="#38bdf8"></stop>
-            </linearGradient>
-        </defs>
-    </svg>
-
-    <div class="site-shell">
-        <header class="topbar">
-            <nav class="navbar container">
-                <a class="brand" href="index.html" aria-label="Joshua Bajao home page">
-                    <span class="brand-mark">JB</span>
-                    <span class="brand-text">
-                        <strong>Joshua Bajao</strong>
-                        <small>Microsoft 365 &amp; Systems Engineer</small>
-                    </span>
+    <div class="site">
+        <header class="nav">
+            <div class="wrap nav-row">
+                <a class="mark" href="index.html" aria-label="Joshua Bajao home">
+                    <span class="mark-grid"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span>
+                    <span class="mark-text"><strong>Joshua Bajao</strong><small>Systems &amp; M365 Engineer</small></span>
                 </a>
-                <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Open navigation">
-                    <span></span><span></span>
-                </button>
-                <div class="nav-panel">
-                    <ul class="nav-links">
-                        <li><a href="index.html" class="nav-link">Home</a></li>
-                        <li><a href="about.html" class="nav-link">About</a></li>
-                        <li><a href="skills.html" class="nav-link is-active">Skills</a></li>
-                        <li><a href="experience.html" class="nav-link">Experience</a></li>
-                        <li><a href="projects.html" class="nav-link">Projects</a></li>
-                        <li><a href="contact.html" class="nav-link">Contact</a></li>
-                    </ul>
-                    <a href="contact.html" class="button button-ghost" data-magnetic>Book a Call</a>
+                <nav class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="skills.html" class="is-active">Skills</a>
+                    <a href="experience.html">Experience</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+                <div class="nav-status">
+                    <span class="status-pill"><span></span>Open to work</span>
+                    <button class="burger" type="button" aria-expanded="false" aria-label="Open menu"><span></span><span></span><span></span></button>
                 </div>
-            </nav>
+            </div>
         </header>
 
+        <nav class="nav-full" aria-hidden="true">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html" class="is-active">Skills</a>
+            <a href="experience.html">Experience</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+            <div class="nav-full-foot"><span>bajaojoshua2@gmail.com</span><span>Qatar</span></div>
+        </nav>
+
         <main id="main">
-            <section class="page-hero mouse-glow">
-                <div class="bg-grid"></div>
-                <div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
-                <div class="container page-hero-inner reveal">
-                    <p class="eyebrow">Skills</p>
-                    <h1>Enterprise IT capability, end to end.</h1>
-                    <p>From identity and endpoints to networks and the cloud, here is where my strengths sit across the Microsoft 365 and IT infrastructure stack.</p>
+            <section class="band" style="padding-top:9rem;">
+                <div class="fx-grid"></div>
+                <div class="wrap" style="position:relative; z-index:2;">
+                    <p class="tag reveal">Skills</p>
+                    <h1 data-split style="margin-top:1rem; font-size:clamp(2.2rem, 5.4vw, 4rem); max-width:820px;">Enterprise IT capability, end to end.</h1>
+                    <p class="reveal" style="margin-top:1.2rem; max-width:560px; font-size:1.05rem;">From identity and endpoints to networks and the cloud — where my strengths sit across the Microsoft 365 and IT infrastructure stack.</p>
                 </div>
             </section>
 
-            <section class="section section-light">
-                <div class="container skill-grid" data-stagger>
-                    <article class="skill-card reveal">
-                        <i class="fa-solid fa-headset"></i>
-                        <h2>IT Support &amp; Troubleshooting</h2>
-                        <p>Frontline and escalated support, structured ticket handling, root-cause troubleshooting, and clear communication with end users.</p>
-                    </article>
-                    <article class="skill-card reveal">
-                        <i class="fa-solid fa-server"></i>
-                        <h2>Systems Administration</h2>
-                        <p>Windows Server, Active Directory, group policy, imaging, and the day-to-day upkeep that keeps infrastructure healthy.</p>
-                    </article>
-                    <article class="skill-card reveal">
-                        <i class="fa-solid fa-network-wired"></i>
-                        <h2>Network Engineering</h2>
-                        <p>Switching, routing, Wi-Fi deployment, VLAN segmentation, and troubleshooting connectivity across sites.</p>
-                    </article>
-                    <article class="skill-card reveal">
-                        <i class="fa-solid fa-cloud"></i>
-                        <h2>Cloud &amp; Security</h2>
-                        <p>Microsoft 365 administration, Entra ID identity, Azure fundamentals, and security-first policy configuration.</p>
-                    </article>
-                </div>
-            </section>
-
-            <section class="section section-dark">
-                <div class="bg-grid"></div>
-                <div class="container">
-                    <div class="section-heading reveal">
-                        <p class="eyebrow">Capability</p>
-                        <h2>Strength areas.</h2>
-                    </div>
-                    <div class="progress-list">
-                        <div class="progress-item reveal">
-                            <div class="progress-meta"><span>Microsoft 365 Administration</span><strong>95%</strong></div>
-                            <div class="progress-track"><span style="width: 95%"></span></div>
+            <section class="band band-raised">
+                <div class="wrap">
+                    <div class="bento field-glow">
+                        <div class="bento-cell reveal">
+                            <div class="bento-top"><span class="bento-icon"><i class="fa-solid fa-headset"></i></span><span class="idx">01</span></div>
+                            <div><h3>IT Support &amp; Troubleshooting</h3><p>Frontline and escalated support, structured ticket handling, root-cause troubleshooting.</p></div>
                         </div>
-                        <div class="progress-item reveal">
-                            <div class="progress-meta"><span>Systems Administration</span><strong>92%</strong></div>
-                            <div class="progress-track"><span style="width: 92%"></span></div>
+                        <div class="bento-cell reveal">
+                            <div class="bento-top"><span class="bento-icon"><i class="fa-solid fa-server"></i></span><span class="idx">02</span></div>
+                            <div><h3>Systems Administration</h3><p>Windows Server, Active Directory, group policy, imaging, and infrastructure upkeep.</p></div>
                         </div>
-                        <div class="progress-item reveal">
-                            <div class="progress-meta"><span>Network Engineering</span><strong>88%</strong></div>
-                            <div class="progress-track"><span style="width: 88%"></span></div>
+                        <div class="bento-cell reveal">
+                            <div class="bento-top"><span class="bento-icon"><i class="fa-solid fa-network-wired"></i></span><span class="idx">03</span></div>
+                            <div><h3>Network Engineering</h3><p>Switching, routing, Wi-Fi deployment, VLAN segmentation, connectivity troubleshooting.</p></div>
                         </div>
-                        <div class="progress-item reveal">
-                            <div class="progress-meta"><span>Security &amp; Identity Management</span><strong>85%</strong></div>
-                            <div class="progress-track"><span style="width: 85%"></span></div>
+                        <div class="bento-cell reveal">
+                            <div class="bento-top"><span class="bento-icon"><i class="fa-solid fa-cloud"></i></span><span class="idx">04</span></div>
+                            <div><h3>Cloud &amp; Security</h3><p>Microsoft 365 administration, Entra ID identity, Azure fundamentals, security-first policy.</p></div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section class="section section-light">
-                <div class="container">
-                    <div class="section-heading reveal">
-                        <p class="eyebrow">Proficiency</p>
-                        <h2>Core platform proficiency.</h2>
-                    </div>
-                    <div class="meter-grid" data-stagger>
-                        <div class="meter-card reveal">
-                            <div class="meter">
-                                <svg viewBox="0 0 128 128"><circle class="meter-track" cx="64" cy="64" r="54"></circle><circle class="meter-value" data-percent="92" cx="64" cy="64" r="54"></circle></svg>
-                                <span class="meter-percent">92%</span>
-                            </div>
-                            <p class="meter-label">Microsoft 365 Ecosystem</p>
+            <section class="band">
+                <div class="wrap-tight">
+                    <div class="head reveal"><p class="tag">Capability</p><h2>Strength areas.</h2></div>
+                    <div class="meter-rows">
+                        <div class="reveal">
+                            <div class="meter-row-head"><span>Microsoft 365 Administration</span><span>95%</span></div>
+                            <div class="meter-line"><i style="width:0%;" data-width="95%"></i></div>
                         </div>
-                        <div class="meter-card reveal">
-                            <div class="meter">
-                                <svg viewBox="0 0 128 128"><circle class="meter-track" cx="64" cy="64" r="54"></circle><circle class="meter-value" data-percent="88" cx="64" cy="64" r="54"></circle></svg>
-                                <span class="meter-percent">88%</span>
-                            </div>
-                            <p class="meter-label">Networking</p>
+                        <div class="reveal">
+                            <div class="meter-row-head"><span>Systems Administration</span><span>92%</span></div>
+                            <div class="meter-line"><i style="width:0%;" data-width="92%"></i></div>
                         </div>
-                        <div class="meter-card reveal">
-                            <div class="meter">
-                                <svg viewBox="0 0 128 128"><circle class="meter-track" cx="64" cy="64" r="54"></circle><circle class="meter-value" data-percent="80" cx="64" cy="64" r="54"></circle></svg>
-                                <span class="meter-percent">80%</span>
-                            </div>
-                            <p class="meter-label">PowerShell Automation</p>
+                        <div class="reveal">
+                            <div class="meter-row-head"><span>Network Engineering</span><span>88%</span></div>
+                            <div class="meter-line"><i style="width:0%;" data-width="88%"></i></div>
                         </div>
-                        <div class="meter-card reveal">
-                            <div class="meter">
-                                <svg viewBox="0 0 128 128"><circle class="meter-track" cx="64" cy="64" r="54"></circle><circle class="meter-value" data-percent="78" cx="64" cy="64" r="54"></circle></svg>
-                                <span class="meter-percent">78%</span>
-                            </div>
-                            <p class="meter-label">Azure Cloud</p>
+                        <div class="reveal">
+                            <div class="meter-row-head"><span>Security &amp; Identity Management</span><span>85%</span></div>
+                            <div class="meter-line"><i style="width:0%;" data-width="85%"></i></div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section class="section section-dark">
-                <div class="bg-grid"></div>
-                <div class="container stack-panel reveal">
-                    <div>
-                        <p class="eyebrow">Tech Stack</p>
-                        <h2>Tools and platforms I work in.</h2>
+            <section class="band band-raised">
+                <div class="wrap split">
+                    <div class="reveal" data-reveal="left" style="display:flex; justify-content:center;">
+                        <div class="orbit" data-orbit='[{"icon":"fa-brands fa-microsoft"},{"icon":"fa-solid fa-cloud"},{"icon":"fa-solid fa-terminal"},{"icon":"fa-solid fa-network-wired"},{"icon":"fa-solid fa-sitemap"},{"icon":"fa-solid fa-mobile-screen"}]'>
+                            <div class="orbit-ring"></div><div class="orbit-ring r2"></div><div class="orbit-ring r3"></div>
+                            <div class="orbit-core">JB</div>
+                        </div>
                     </div>
-                    <div class="tag-wall left">
-                        <span>Microsoft 365</span>
-                        <span>Entra ID</span>
-                        <span>Intune</span>
-                        <span>Exchange Online</span>
-                        <span>SharePoint</span>
-                        <span>Teams</span>
-                        <span>Networking</span>
-                        <span>Active Directory</span>
-                        <span>Windows Server</span>
-                        <span>PowerShell</span>
-                        <span>Azure</span>
-                        <span>Security Administration</span>
+                    <div class="split-body reveal" data-reveal="right">
+                        <p class="tag">Core platforms</p>
+                        <h2 style="margin-top:0.9rem;">The stack I operate in daily.</h2>
+                        <p>My work centers on the Microsoft ecosystem end to end — from tenant identity through endpoint devices to the network layer connecting them.</p>
+                        <div class="line-facts">
+                            <article><span>Identity</span><strong>Entra ID &amp; Active Directory</strong></article>
+                            <article><span>Endpoints</span><strong>Intune device management</strong></article>
+                            <article><span>Automation</span><strong>PowerShell scripting</strong></article>
+                            <article><span>Cloud</span><strong>Azure infrastructure</strong></article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="band">
+                <div class="wrap">
+                    <div class="head reveal"><p class="tag">Tech stack</p><h2>Tools and platforms I work in.</h2></div>
+                    <div class="showcase-tags reveal" data-stagger style="gap:0.7rem;">
+                        <span>Microsoft 365</span><span>Entra ID</span><span>Intune</span><span>Exchange Online</span>
+                        <span>SharePoint</span><span>Teams</span><span>Networking</span><span>Active Directory</span>
+                        <span>Windows Server</span><span>PowerShell</span><span>Azure</span><span>Security Administration</span>
                     </div>
                 </div>
             </section>
         </main>
 
-        <footer class="footer">
-            <div class="container footer-row">
-                <div>
-                    <p class="footer-title">Joshua Bajao</p>
-                    <p class="footer-copy">Enterprise-grade Microsoft 365, network, and systems skills.</p>
+        <footer class="mega-footer">
+            <div class="wrap">
+                <div class="mega-footer-top">
+                    <div><p class="mega-footer-word">Joshua Bajao</p><p class="mega-footer-lead">Enterprise-grade Microsoft 365, network, and systems skills.</p></div>
+                    <div class="mega-footer-col"><h4>Sitemap</h4><ul><li><a href="index.html">Home</a></li><li><a href="projects.html">Projects</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+                    <div class="mega-footer-col"><h4>Connect</h4><ul><li><a href="mailto:bajaojoshua2@gmail.com">Email</a></li><li><a href="https://github.com/Yoon167" target="_blank" rel="noreferrer">GitHub</a></li></ul></div>
+                    <div class="mega-footer-col"><h4>Status</h4><ul><li><a href="contact.html">Open to work</a></li></ul></div>
                 </div>
-                <div class="footer-links">
-                    <a href="projects.html">Projects</a>
-                    <a href="contact.html">Contact</a>
-                    <a href="mailto:bajaojoshua2@gmail.com">Email</a>
-                </div>
+                <div class="mega-footer-bottom"><span>© 2026 Joshua Bajao. All rights reserved.</span><a href="#main">Back to top ↑</a></div>
             </div>
         </footer>
     </div>

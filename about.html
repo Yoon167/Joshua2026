@@ -7,225 +7,164 @@
     <meta name="description" content="Learn more about Joshua Bajao, a Microsoft 365 Administrator, Network Engineer, and Systems Administrator focused on reliable, secure enterprise IT.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body data-page="about">
     <a class="skip-link" href="#main">Skip to content</a>
-    <div class="loader" aria-hidden="true">
-        <div class="loader-mark"><span>J</span><span>B</span><span>·</span><span>I</span><span>T</span></div>
-        <div class="loader-bar"><span></span></div>
-    </div>
+    <div class="loader" aria-hidden="true"><div class="loader-grid"><span></span><span></span><span></span><span></span></div></div>
 
-    <div class="site-shell">
-        <header class="topbar">
-            <nav class="navbar container">
-                <a class="brand" href="index.html" aria-label="Joshua Bajao home page">
-                    <span class="brand-mark">JB</span>
-                    <span class="brand-text">
-                        <strong>Joshua Bajao</strong>
-                        <small>Microsoft 365 &amp; Systems Engineer</small>
-                    </span>
+    <div class="site">
+        <header class="nav">
+            <div class="wrap nav-row">
+                <a class="mark" href="index.html" aria-label="Joshua Bajao home">
+                    <span class="mark-grid"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span>
+                    <span class="mark-text"><strong>Joshua Bajao</strong><small>Systems &amp; M365 Engineer</small></span>
                 </a>
-                <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Open navigation">
-                    <span></span><span></span>
-                </button>
-                <div class="nav-panel">
-                    <ul class="nav-links">
-                        <li><a href="index.html" class="nav-link">Home</a></li>
-                        <li><a href="about.html" class="nav-link is-active">About</a></li>
-                        <li><a href="skills.html" class="nav-link">Skills</a></li>
-                        <li><a href="experience.html" class="nav-link">Experience</a></li>
-                        <li><a href="projects.html" class="nav-link">Projects</a></li>
-                        <li><a href="contact.html" class="nav-link">Contact</a></li>
-                    </ul>
-                    <a href="contact.html" class="button button-ghost" data-magnetic>Book a Call</a>
+                <nav class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html" class="is-active">About</a>
+                    <a href="skills.html">Skills</a>
+                    <a href="experience.html">Experience</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+                <div class="nav-status">
+                    <span class="status-pill"><span></span>Open to work</span>
+                    <button class="burger" type="button" aria-expanded="false" aria-label="Open menu"><span></span><span></span><span></span></button>
                 </div>
-            </nav>
+            </div>
         </header>
 
+        <nav class="nav-full" aria-hidden="true">
+            <a href="index.html">Home</a>
+            <a href="about.html" class="is-active">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="experience.html">Experience</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+            <div class="nav-full-foot"><span>bajaojoshua2@gmail.com</span><span>Qatar</span></div>
+        </nav>
+
         <main id="main">
-            <section class="page-hero mouse-glow">
-                <div class="bg-grid"></div>
-                <div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
-                <div class="container page-hero-inner reveal">
-                    <p class="eyebrow">About</p>
-                    <h1>The engineer behind the tickets, the tenants, and the uptime.</h1>
-                    <p>I keep enterprise IT environments dependable: identities secured, devices managed, networks stable, and people supported.</p>
+            <section class="band" style="padding-top:9rem;">
+                <div class="fx-grid"></div>
+                <div class="wrap" style="position:relative; z-index:2;">
+                    <p class="tag reveal">About</p>
+                    <h1 data-split style="margin-top:1rem; font-size:clamp(2.2rem, 5.4vw, 4rem); max-width:900px;">The engineer behind the tickets, the tenants, and the uptime.</h1>
+                    <p class="reveal" style="margin-top:1.2rem; max-width:560px; font-size:1.05rem;">I keep enterprise IT environments dependable: identities secured, devices managed, networks stable, and people supported.</p>
                 </div>
             </section>
 
-            <section class="section section-light">
-                <div class="container split-layout">
-                    <div class="profile-column reveal" data-reveal="left">
-                        <img src="JOSHUA.jpeg" alt="Joshua Bajao portrait" class="profile-portrait">
-                    </div>
-                    <div class="content-column reveal reveal-delay" data-reveal="right">
-                        <p class="eyebrow">Who I Am</p>
-                        <h2>Joshua Bajao</h2>
+            <section class="band band-raised">
+                <div class="wrap split">
+                    <div class="split-media reveal" data-reveal="left"><img src="JOSHUA.jpeg" alt="Joshua Bajao portrait"></div>
+                    <div class="split-body reveal" data-reveal="right">
+                        <p class="tag">Who I am</p>
+                        <h2 style="margin-top:0.9rem;">Joshua Bajao</h2>
                         <p>I'm an IT professional working across Microsoft 365 administration, network engineering, and systems support. I care about the fundamentals: secure identity, reliable infrastructure, clean documentation, and IT support that actually helps the person on the other end of the ticket.</p>
                         <p>My work spans tenant administration, endpoint and device management, on-prem and cloud networking, and the day-to-day systems work that keeps an organization running without anyone noticing the effort behind it.</p>
-                        <div class="detail-stack">
-                            <article>
-                                <span>Location</span>
-                                <strong>Qatar</strong>
-                            </article>
-                            <article>
-                                <span>Email</span>
-                                <strong><a href="mailto:bajaojoshua2@gmail.com">bajaojoshua2@gmail.com</a></strong>
-                            </article>
-                            <article>
-                                <span>Focus</span>
-                                <strong>Microsoft 365, networking, systems &amp; endpoint administration</strong>
-                            </article>
-                        </div>
-                        <div class="float-indicators" aria-hidden="true">
-                            <span class="float-chip" style="animation-delay:0s;">Entra ID</span>
-                            <span class="float-chip" style="animation-delay:0.6s;">Intune</span>
-                            <span class="float-chip" style="animation-delay:1.2s;">PowerShell</span>
-                            <span class="float-chip" style="animation-delay:1.8s;">Azure</span>
+                        <div class="line-facts">
+                            <article><span>Location</span><strong>Qatar</strong></article>
+                            <article><span>Email</span><strong><a href="mailto:bajaojoshua2@gmail.com">bajaojoshua2@gmail.com</a></strong></article>
+                            <article><span>Focus</span><strong>M365, networking, systems &amp; endpoint administration</strong></article>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section class="section section-dark">
-                <div class="bg-grid"></div>
-                <div class="container">
-                    <div class="section-heading reveal">
-                        <p class="eyebrow">Journey</p>
-                        <h2>How I got here.</h2>
-                    </div>
-                    <div class="timeline-shell">
-                        <article class="timeline-card reveal">
-                            <span class="timeline-year">Present</span>
-                            <h2>Systems &amp; Microsoft 365 Administrator</h2>
-                            <p>Administering Microsoft 365 tenants, Entra ID identity, and endpoint devices while supporting day-to-day network and systems operations.</p>
-                        </article>
-                        <article class="timeline-card reveal">
-                            <span class="timeline-year">Earlier</span>
-                            <h2>Network &amp; IT Support Engineer</h2>
-                            <p>Built hands-on experience with networking fundamentals, Active Directory, Windows Server, and frontline IT support for end users.</p>
-                        </article>
-                        <article class="timeline-card reveal">
-                            <span class="timeline-year">Foundation</span>
-                            <h2>IT Support &amp; Systems Fundamentals</h2>
+            <section class="band">
+                <div class="wrap">
+                    <div class="head reveal"><p class="tag">Journey</p><h2>How I got here.</h2></div>
+                </div>
+                <div class="timeline-pin">
+                    <div class="timeline-track">
+                        <article class="timeline-frame reveal">
+                            <span class="idx">01 / Foundation</span>
+                            <h3>IT Support &amp; Systems Fundamentals</h3>
                             <p>Started in IT support, learning ticketing workflows, device imaging, troubleshooting, and the basics of enterprise infrastructure.</p>
+                            <ul><li>Structured troubleshooting &amp; root-cause diagnosis</li><li>Device setup, imaging &amp; basic network config</li></ul>
                         </article>
+                        <article class="timeline-frame reveal">
+                            <span class="idx">02 / Earlier</span>
+                            <h3>Network &amp; IT Support Engineer</h3>
+                            <p>Built hands-on experience with networking fundamentals, Active Directory, Windows Server, and frontline IT support for end users.</p>
+                            <ul><li>Switches, routers &amp; Wi-Fi access points</li><li>Active Directory accounts, GPOs &amp; permissions</li></ul>
+                        </article>
+                        <article class="timeline-frame reveal">
+                            <span class="idx">03 / Present</span>
+                            <h3>Systems &amp; Microsoft 365 Administrator</h3>
+                            <p>Administering Microsoft 365 tenants, Entra ID identity, and endpoint devices while supporting day-to-day network and systems operations.</p>
+                            <ul><li>M365 tenant administration &amp; licensing</li><li>Intune-managed endpoint devices</li></ul>
+                        </article>
+                        <article class="timeline-frame reveal">
+                            <span class="idx">04 / Ongoing</span>
+                            <h3>Continuous Learning</h3>
+                            <p>Deepening cloud, security, and automation skills through hands-on projects and certification study.</p>
+                            <ul><li>Azure fundamentals &amp; cloud infrastructure</li><li>PowerShell automation</li></ul>
+                        </article>
+                    </div>
+                    <div class="timeline-stack wrap">
+                        <article class="timeline-frame reveal"><span class="idx">01 / Foundation</span><h3>IT Support &amp; Systems Fundamentals</h3><p>Started in IT support, learning ticketing workflows, device imaging, troubleshooting, and the basics of enterprise infrastructure.</p></article>
+                        <article class="timeline-frame reveal"><span class="idx">02 / Earlier</span><h3>Network &amp; IT Support Engineer</h3><p>Built hands-on experience with networking fundamentals, Active Directory, Windows Server, and frontline IT support for end users.</p></article>
+                        <article class="timeline-frame reveal"><span class="idx">03 / Present</span><h3>Systems &amp; Microsoft 365 Administrator</h3><p>Administering Microsoft 365 tenants, Entra ID identity, and endpoint devices while supporting day-to-day network and systems operations.</p></article>
+                        <article class="timeline-frame reveal"><span class="idx">04 / Ongoing</span><h3>Continuous Learning</h3><p>Deepening cloud, security, and automation skills through hands-on projects and certification study.</p></article>
                     </div>
                 </div>
             </section>
 
-            <section class="section section-light">
-                <div class="container">
-                    <div class="section-heading reveal">
-                        <p class="eyebrow">Statistics</p>
-                        <h2>Operational footprint at a glance.</h2>
-                    </div>
-                    <div class="stats-grid" data-stagger>
-                        <div class="stat-card reveal">
-                            <div class="stat-value"><span class="grad-text" data-counter="500" data-suffix="+">0</span></div>
-                            <p class="stat-label">Devices Configured</p>
-                        </div>
-                        <div class="stat-card reveal">
-                            <div class="stat-value"><span class="grad-text" data-counter="1200" data-suffix="+">0</span></div>
-                            <p class="stat-label">Users Supported</p>
-                        </div>
-                        <div class="stat-card reveal">
-                            <div class="stat-value"><span class="grad-text" data-counter="40" data-suffix="+">0</span></div>
-                            <p class="stat-label">Projects Completed</p>
-                        </div>
-                        <div class="stat-card reveal">
-                            <div class="stat-value"><span class="grad-text" data-counter="25" data-suffix="+">0</span></div>
-                            <p class="stat-label">Network Deployments</p>
-                        </div>
-                        <div class="stat-card reveal">
-                            <div class="stat-value"><span class="grad-text" data-counter="3" data-suffix="+">0</span></div>
-                            <p class="stat-label">Years Experience</p>
-                        </div>
-                    </div>
-                    <p class="text-muted" style="margin-top:1.2rem; font-size:0.8rem;">Figures shown are placeholder targets — swap in your verified numbers.</p>
+            <section class="band band-strip">
+                <div class="wrap stat-strip">
+                    <article class="reveal"><div class="stat-fig grad" data-counter="500" data-suffix="+">0</div><p class="stat-lbl">Devices Configured</p></article>
+                    <article class="reveal"><div class="stat-fig grad" data-counter="1200" data-suffix="+">0</div><p class="stat-lbl">Users Supported</p></article>
+                    <article class="reveal"><div class="stat-fig grad" data-counter="40" data-suffix="+">0</div><p class="stat-lbl">Projects Completed</p></article>
+                    <article class="reveal"><div class="stat-fig grad" data-counter="25" data-suffix="+">0</div><p class="stat-lbl">Network Deployments</p></article>
+                    <article class="reveal"><div class="stat-fig grad" data-counter="3" data-suffix="+">0</div><p class="stat-lbl">Years Experience</p></article>
                 </div>
+                <p class="wrap" style="margin-top:1.4rem; font-family:var(--f-mono); font-size:0.72rem; color:var(--fg-3);">Figures shown are placeholder targets — swap in verified numbers.</p>
             </section>
 
-            <section class="section section-dark">
-                <div class="bg-grid"></div>
-                <div class="container">
-                    <div class="section-heading reveal">
-                        <p class="eyebrow">Approach</p>
-                        <h2>How I work.</h2>
-                    </div>
-                    <div class="editorial-grid" data-stagger>
-                        <article class="editorial-card reveal">
-                            <span>01</span>
-                            <h3>Security by default</h3>
-                            <p>Identity, access, and device policy are treated as first-class concerns, not an afterthought bolted on later.</p>
-                        </article>
-                        <article class="editorial-card reveal">
-                            <span>02</span>
-                            <h3>Document everything</h3>
-                            <p>Clear runbooks and change records mean systems stay maintainable, not just working by accident.</p>
-                        </article>
-                        <article class="editorial-card reveal">
-                            <span>03</span>
-                            <h3>Support the human, not just the ticket</h3>
-                            <p>Behind every request is someone trying to get work done. I aim to resolve issues with clarity and patience.</p>
-                        </article>
+            <section class="band">
+                <div class="wrap">
+                    <div class="head reveal"><p class="tag">Approach</p><h2>How I work.</h2></div>
+                    <div class="principle-rows">
+                        <div class="principle-row reveal"><span class="idx">01</span><div><h3>Security by default</h3><p>Identity, access, and device policy are treated as first-class concerns, not an afterthought bolted on later.</p></div></div>
+                        <div class="principle-row reveal"><span class="idx">02</span><div><h3>Document everything</h3><p>Clear runbooks and change records mean systems stay maintainable, not just working by accident.</p></div></div>
+                        <div class="principle-row reveal"><span class="idx">03</span><div><h3>Support the human, not just the ticket</h3><p>Behind every request is someone trying to get work done. I aim to resolve issues with clarity and patience.</p></div></div>
                     </div>
                 </div>
             </section>
 
-            <section class="section section-light">
-                <div class="container">
-                    <div class="section-heading reveal">
-                        <p class="eyebrow">Certifications</p>
-                        <h2>Credentials in progress.</h2>
+            <section class="band band-raised">
+                <div class="wrap">
+                    <div class="head reveal"><p class="tag">Certifications</p><h2>Credentials in progress.</h2></div>
+                    <div class="cert-rows">
+                        <div class="cert-row is-empty reveal"><span class="idx">01</span><div><h3>Add certification name</h3><span>Issuing body &amp; year</span></div><span class="cert-row-status">Pending</span></div>
+                        <div class="cert-row is-empty reveal"><span class="idx">02</span><div><h3>Add certification name</h3><span>Issuing body &amp; year</span></div><span class="cert-row-status">Pending</span></div>
+                        <div class="cert-row is-empty reveal"><span class="idx">03</span><div><h3>Add certification name</h3><span>Issuing body &amp; year</span></div><span class="cert-row-status">Pending</span></div>
                     </div>
-                    <div class="cert-grid" data-stagger>
-                        <article class="cert-card is-placeholder reveal">
-                            <span class="cert-badge"><i class="fa-solid fa-plus"></i></span>
-                            <h3>Add certification name</h3>
-                            <p>Issuing body &amp; year</p>
-                        </article>
-                        <article class="cert-card is-placeholder reveal">
-                            <span class="cert-badge"><i class="fa-solid fa-plus"></i></span>
-                            <h3>Add certification name</h3>
-                            <p>Issuing body &amp; year</p>
-                        </article>
-                        <article class="cert-card is-placeholder reveal">
-                            <span class="cert-badge"><i class="fa-solid fa-plus"></i></span>
-                            <h3>Add certification name</h3>
-                            <p>Issuing body &amp; year</p>
-                        </article>
-                    </div>
-                    <p class="text-muted" style="margin-top:1.2rem; font-size:0.8rem;">Placeholder slots — add your real certifications (e.g. Microsoft, CompTIA, Cisco) when ready.</p>
+                    <p style="margin-top:1.4rem; font-family:var(--f-mono); font-size:0.72rem; color:var(--fg-3);">Placeholder rows — add real certifications (e.g. Microsoft, CompTIA, Cisco) when ready.</p>
                 </div>
             </section>
 
-            <section class="section section-dark">
-                <div class="bg-grid"></div>
-                <div class="container narrative-panel reveal">
-                    <div>
-                        <p class="eyebrow">Vision</p>
-                        <h2>Systems people can rely on, and support people can trust.</h2>
-                    </div>
-                    <p>Good IT work is mostly invisible when it's done right. I want the environments I manage to feel dependable, the people I support to feel heard, and the systems I build to hold up under real use.</p>
+            <section class="band manifesto">
+                <div class="wrap-tight reveal" data-reveal="scale">
+                    <blockquote>Systems people can rely on, and support people can trust.</blockquote>
+                    <cite>— Vision</cite>
                 </div>
             </section>
         </main>
 
-        <footer class="footer">
-            <div class="container footer-row">
-                <div>
-                    <p class="footer-title">Joshua Bajao</p>
-                    <p class="footer-copy">Reliable Microsoft 365, network, and systems engineering.</p>
+        <footer class="mega-footer">
+            <div class="wrap">
+                <div class="mega-footer-top">
+                    <div><p class="mega-footer-word">Joshua Bajao</p><p class="mega-footer-lead">Reliable Microsoft 365, network, and systems engineering.</p></div>
+                    <div class="mega-footer-col"><h4>Sitemap</h4><ul><li><a href="index.html">Home</a></li><li><a href="projects.html">Projects</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+                    <div class="mega-footer-col"><h4>Connect</h4><ul><li><a href="mailto:bajaojoshua2@gmail.com">Email</a></li><li><a href="https://github.com/Yoon167" target="_blank" rel="noreferrer">GitHub</a></li></ul></div>
+                    <div class="mega-footer-col"><h4>Status</h4><ul><li><a href="contact.html">Open to work</a></li></ul></div>
                 </div>
-                <div class="footer-links">
-                    <a href="index.html">Home</a>
-                    <a href="projects.html">Projects</a>
-                    <a href="contact.html">Contact</a>
-                </div>
+                <div class="mega-footer-bottom"><span>© 2026 Joshua Bajao. All rights reserved.</span><a href="#main">Back to top ↑</a></div>
             </div>
         </footer>
     </div>
