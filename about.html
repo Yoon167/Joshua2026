@@ -1,17 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About | Joshua Bajao</title>
-    <meta name="description" content="Learn more about Joshua Bajao, a mobile app developer focused on elegant interfaces and meaningful digital products.">
+    <meta name="description" content="Learn more about Joshua Bajao, a Microsoft 365 Administrator, Network Engineer, and Systems Administrator focused on reliable, secure enterprise IT.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body data-page="about">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="loader" aria-hidden="true">
+        <div class="loader-mark"><span>J</span><span>B</span><span>·</span><span>I</span><span>T</span></div>
+        <div class="loader-bar"><span></span></div>
+    </div>
+
     <div class="site-shell">
         <header class="topbar">
             <nav class="navbar container">
@@ -19,12 +25,11 @@
                     <span class="brand-mark">JB</span>
                     <span class="brand-text">
                         <strong>Joshua Bajao</strong>
-                        <small>Mobile App Developer</small>
+                        <small>Microsoft 365 &amp; Systems Engineer</small>
                     </span>
                 </a>
                 <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Open navigation">
-                    <span></span>
-                    <span></span>
+                    <span></span><span></span>
                 </button>
                 <div class="nav-panel">
                     <ul class="nav-links">
@@ -35,30 +40,32 @@
                         <li><a href="projects.html" class="nav-link">Projects</a></li>
                         <li><a href="contact.html" class="nav-link">Contact</a></li>
                     </ul>
-                    <a href="contact.html" class="button button-ghost">Book a Conversation</a>
+                    <a href="contact.html" class="button button-ghost" data-magnetic>Book a Call</a>
                 </div>
             </nav>
         </header>
 
-        <main>
-            <section class="page-hero">
+        <main id="main">
+            <section class="page-hero mouse-glow">
+                <div class="bg-grid"></div>
+                <div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
                 <div class="container page-hero-inner reveal">
                     <p class="eyebrow">About</p>
-                    <h1>The person behind the product polish.</h1>
-                    <p>I build experiences that combine visual elegance, clear usability, and a strong emotional connection to the audience.</p>
+                    <h1>The engineer behind the tickets, the tenants, and the uptime.</h1>
+                    <p>I keep enterprise IT environments dependable: identities secured, devices managed, networks stable, and people supported.</p>
                 </div>
             </section>
 
             <section class="section section-light">
                 <div class="container split-layout">
-                    <div class="profile-column reveal">
+                    <div class="profile-column reveal" data-reveal="left">
                         <img src="JOSHUA.jpeg" alt="Joshua Bajao portrait" class="profile-portrait">
                     </div>
-                    <div class="content-column reveal reveal-delay">
+                    <div class="content-column reveal reveal-delay" data-reveal="right">
                         <p class="eyebrow">Who I Am</p>
                         <h2>Joshua Bajao</h2>
-                        <p>I am a mobile app developer with a strong interest in premium interface design, product storytelling, and building experiences people genuinely want to use. I care about clarity, feeling, and detail, not just functionality.</p>
-                        <p>My work centers on digital products that need both technical structure and emotional resonance. I enjoy turning early concepts into polished user experiences that feel intentional from the first screen to the last interaction.</p>
+                        <p>I'm an IT professional working across Microsoft 365 administration, network engineering, and systems support. I care about the fundamentals: secure identity, reliable infrastructure, clean documentation, and IT support that actually helps the person on the other end of the ticket.</p>
+                        <p>My work spans tenant administration, endpoint and device management, on-prem and cloud networking, and the day-to-day systems work that keeps an organization running without anyone noticing the effort behind it.</p>
                         <div class="detail-stack">
                             <article>
                                 <span>Location</span>
@@ -70,46 +77,140 @@
                             </article>
                             <article>
                                 <span>Focus</span>
-                                <strong>Mobile apps, portfolio websites, product UI</strong>
+                                <strong>Microsoft 365, networking, systems &amp; endpoint administration</strong>
                             </article>
+                        </div>
+                        <div class="float-indicators" aria-hidden="true">
+                            <span class="float-chip" style="animation-delay:0s;">Entra ID</span>
+                            <span class="float-chip" style="animation-delay:0.6s;">Intune</span>
+                            <span class="float-chip" style="animation-delay:1.2s;">PowerShell</span>
+                            <span class="float-chip" style="animation-delay:1.8s;">Azure</span>
                         </div>
                     </div>
                 </div>
             </section>
 
             <section class="section section-dark">
+                <div class="bg-grid"></div>
                 <div class="container">
                     <div class="section-heading reveal">
-                        <p class="eyebrow">Approach</p>
-                        <h2>How I build.</h2>
+                        <p class="eyebrow">Journey</p>
+                        <h2>How I got here.</h2>
                     </div>
-                    <div class="editorial-grid">
-                        <article class="editorial-card reveal">
-                            <span>01</span>
-                            <h3>Design with atmosphere</h3>
-                            <p>I aim for interfaces that feel elevated, memorable, and premium instead of generic or template-driven.</p>
+                    <div class="timeline-shell">
+                        <article class="timeline-card reveal">
+                            <span class="timeline-year">Present</span>
+                            <h2>Systems &amp; Microsoft 365 Administrator</h2>
+                            <p>Administering Microsoft 365 tenants, Entra ID identity, and endpoint devices while supporting day-to-day network and systems operations.</p>
                         </article>
-                        <article class="editorial-card reveal">
-                            <span>02</span>
-                            <h3>Think like a product owner</h3>
-                            <p>I shape flows around the real user experience, feature hierarchy, and the value each screen should create.</p>
+                        <article class="timeline-card reveal">
+                            <span class="timeline-year">Earlier</span>
+                            <h2>Network &amp; IT Support Engineer</h2>
+                            <p>Built hands-on experience with networking fundamentals, Active Directory, Windows Server, and frontline IT support for end users.</p>
                         </article>
-                        <article class="editorial-card reveal">
-                            <span>03</span>
-                            <h3>Refine every interaction</h3>
-                            <p>From navigation to call-to-action buttons, I want each interaction to feel smooth, clickable, and intentional.</p>
+                        <article class="timeline-card reveal">
+                            <span class="timeline-year">Foundation</span>
+                            <h2>IT Support &amp; Systems Fundamentals</h2>
+                            <p>Started in IT support, learning ticketing workflows, device imaging, troubleshooting, and the basics of enterprise infrastructure.</p>
                         </article>
                     </div>
                 </div>
             </section>
 
             <section class="section section-light">
+                <div class="container">
+                    <div class="section-heading reveal">
+                        <p class="eyebrow">Statistics</p>
+                        <h2>Operational footprint at a glance.</h2>
+                    </div>
+                    <div class="stats-grid" data-stagger>
+                        <div class="stat-card reveal">
+                            <div class="stat-value"><span class="grad-text" data-counter="500" data-suffix="+">0</span></div>
+                            <p class="stat-label">Devices Configured</p>
+                        </div>
+                        <div class="stat-card reveal">
+                            <div class="stat-value"><span class="grad-text" data-counter="1200" data-suffix="+">0</span></div>
+                            <p class="stat-label">Users Supported</p>
+                        </div>
+                        <div class="stat-card reveal">
+                            <div class="stat-value"><span class="grad-text" data-counter="40" data-suffix="+">0</span></div>
+                            <p class="stat-label">Projects Completed</p>
+                        </div>
+                        <div class="stat-card reveal">
+                            <div class="stat-value"><span class="grad-text" data-counter="25" data-suffix="+">0</span></div>
+                            <p class="stat-label">Network Deployments</p>
+                        </div>
+                        <div class="stat-card reveal">
+                            <div class="stat-value"><span class="grad-text" data-counter="3" data-suffix="+">0</span></div>
+                            <p class="stat-label">Years Experience</p>
+                        </div>
+                    </div>
+                    <p class="text-muted" style="margin-top:1.2rem; font-size:0.8rem;">Figures shown are placeholder targets — swap in your verified numbers.</p>
+                </div>
+            </section>
+
+            <section class="section section-dark">
+                <div class="bg-grid"></div>
+                <div class="container">
+                    <div class="section-heading reveal">
+                        <p class="eyebrow">Approach</p>
+                        <h2>How I work.</h2>
+                    </div>
+                    <div class="editorial-grid" data-stagger>
+                        <article class="editorial-card reveal">
+                            <span>01</span>
+                            <h3>Security by default</h3>
+                            <p>Identity, access, and device policy are treated as first-class concerns, not an afterthought bolted on later.</p>
+                        </article>
+                        <article class="editorial-card reveal">
+                            <span>02</span>
+                            <h3>Document everything</h3>
+                            <p>Clear runbooks and change records mean systems stay maintainable, not just working by accident.</p>
+                        </article>
+                        <article class="editorial-card reveal">
+                            <span>03</span>
+                            <h3>Support the human, not just the ticket</h3>
+                            <p>Behind every request is someone trying to get work done. I aim to resolve issues with clarity and patience.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section section-light">
+                <div class="container">
+                    <div class="section-heading reveal">
+                        <p class="eyebrow">Certifications</p>
+                        <h2>Credentials in progress.</h2>
+                    </div>
+                    <div class="cert-grid" data-stagger>
+                        <article class="cert-card is-placeholder reveal">
+                            <span class="cert-badge"><i class="fa-solid fa-plus"></i></span>
+                            <h3>Add certification name</h3>
+                            <p>Issuing body &amp; year</p>
+                        </article>
+                        <article class="cert-card is-placeholder reveal">
+                            <span class="cert-badge"><i class="fa-solid fa-plus"></i></span>
+                            <h3>Add certification name</h3>
+                            <p>Issuing body &amp; year</p>
+                        </article>
+                        <article class="cert-card is-placeholder reveal">
+                            <span class="cert-badge"><i class="fa-solid fa-plus"></i></span>
+                            <h3>Add certification name</h3>
+                            <p>Issuing body &amp; year</p>
+                        </article>
+                    </div>
+                    <p class="text-muted" style="margin-top:1.2rem; font-size:0.8rem;">Placeholder slots — add your real certifications (e.g. Microsoft, CompTIA, Cisco) when ready.</p>
+                </div>
+            </section>
+
+            <section class="section section-dark">
+                <div class="bg-grid"></div>
                 <div class="container narrative-panel reveal">
                     <div>
                         <p class="eyebrow">Vision</p>
-                        <h2>I want to create products that look beautiful and serve people well.</h2>
+                        <h2>Systems people can rely on, and support people can trust.</h2>
                     </div>
-                    <p>That is why projects like Can I Pray for You matter to me. The goal is not just to ship features. The goal is to create a digital space where connection, care, faith, and thoughtful design work together in one experience.</p>
+                    <p>Good IT work is mostly invisible when it's done right. I want the environments I manage to feel dependable, the people I support to feel heard, and the systems I build to hold up under real use.</p>
                 </div>
             </section>
         </main>
@@ -118,7 +219,7 @@
             <div class="container footer-row">
                 <div>
                     <p class="footer-title">Joshua Bajao</p>
-                    <p class="footer-copy">Luxury-minded digital design and mobile app development.</p>
+                    <p class="footer-copy">Reliable Microsoft 365, network, and systems engineering.</p>
                 </div>
                 <div class="footer-links">
                     <a href="index.html">Home</a>
@@ -129,6 +230,9 @@
         </footer>
     </div>
 
-    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,17 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skills | Joshua Bajao</title>
-    <meta name="description" content="Explore Joshua Bajao's mobile app, UI, front-end, and product presentation skills.">
+    <meta name="description" content="Explore Joshua Bajao's Microsoft 365, networking, systems administration, and cloud security skills.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body data-page="skills">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="loader" aria-hidden="true">
+        <div class="loader-mark"><span>J</span><span>B</span><span>·</span><span>I</span><span>T</span></div>
+        <div class="loader-bar"><span></span></div>
+    </div>
+
+    <svg width="0" height="0" style="position:absolute;" aria-hidden="true">
+        <defs>
+            <linearGradient id="meterGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#2563eb"></stop>
+                <stop offset="100%" stop-color="#38bdf8"></stop>
+            </linearGradient>
+        </defs>
+    </svg>
+
     <div class="site-shell">
         <header class="topbar">
             <nav class="navbar container">
@@ -19,12 +34,11 @@
                     <span class="brand-mark">JB</span>
                     <span class="brand-text">
                         <strong>Joshua Bajao</strong>
-                        <small>Mobile App Developer</small>
+                        <small>Microsoft 365 &amp; Systems Engineer</small>
                     </span>
                 </a>
                 <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Open navigation">
-                    <span></span>
-                    <span></span>
+                    <span></span><span></span>
                 </button>
                 <div class="nav-panel">
                     <ul class="nav-links">
@@ -35,46 +49,49 @@
                         <li><a href="projects.html" class="nav-link">Projects</a></li>
                         <li><a href="contact.html" class="nav-link">Contact</a></li>
                     </ul>
-                    <a href="contact.html" class="button button-ghost">Book a Conversation</a>
+                    <a href="contact.html" class="button button-ghost" data-magnetic>Book a Call</a>
                 </div>
             </nav>
         </header>
 
-        <main>
-            <section class="page-hero">
+        <main id="main">
+            <section class="page-hero mouse-glow">
+                <div class="bg-grid"></div>
+                <div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
                 <div class="container page-hero-inner reveal">
                     <p class="eyebrow">Skills</p>
-                    <h1>Craft, systems, and product taste.</h1>
-                    <p>My work blends interface design, front-end implementation, product structure, and storytelling for modern digital brands.</p>
+                    <h1>Enterprise IT capability, end to end.</h1>
+                    <p>From identity and endpoints to networks and the cloud, here is where my strengths sit across the Microsoft 365 and IT infrastructure stack.</p>
                 </div>
             </section>
 
             <section class="section section-light">
-                <div class="container skill-grid">
+                <div class="container skill-grid" data-stagger>
                     <article class="skill-card reveal">
-                        <i class="fa-solid fa-mobile-screen-button"></i>
-                        <h2>Mobile App Development</h2>
-                        <p>App concepts, user flows, feature architecture, onboarding screens, and polished mobile-first experiences.</p>
+                        <i class="fa-solid fa-headset"></i>
+                        <h2>IT Support &amp; Troubleshooting</h2>
+                        <p>Frontline and escalated support, structured ticket handling, root-cause troubleshooting, and clear communication with end users.</p>
                     </article>
                     <article class="skill-card reveal">
-                        <i class="fa-solid fa-palette"></i>
-                        <h2>Luxury UI Direction</h2>
-                        <p>Elegant layouts, intentional typography, premium spacing, and elevated visual systems that feel custom-made.</p>
+                        <i class="fa-solid fa-server"></i>
+                        <h2>Systems Administration</h2>
+                        <p>Windows Server, Active Directory, group policy, imaging, and the day-to-day upkeep that keeps infrastructure healthy.</p>
                     </article>
                     <article class="skill-card reveal">
-                        <i class="fa-solid fa-code"></i>
-                        <h2>Front-end Delivery</h2>
-                        <p>Responsive HTML, CSS, and JavaScript for static sites, showcase pages, and app presentation experiences.</p>
+                        <i class="fa-solid fa-network-wired"></i>
+                        <h2>Network Engineering</h2>
+                        <p>Switching, routing, Wi-Fi deployment, VLAN segmentation, and troubleshooting connectivity across sites.</p>
                     </article>
                     <article class="skill-card reveal">
-                        <i class="fa-solid fa-diagram-project"></i>
-                        <h2>Product Thinking</h2>
-                        <p>Feature prioritization, clear navigation, conversion-focused layouts, and flows that support user trust.</p>
+                        <i class="fa-solid fa-cloud"></i>
+                        <h2>Cloud &amp; Security</h2>
+                        <p>Microsoft 365 administration, Entra ID identity, Azure fundamentals, and security-first policy configuration.</p>
                     </article>
                 </div>
             </section>
 
             <section class="section section-dark">
+                <div class="bg-grid"></div>
                 <div class="container">
                     <div class="section-heading reveal">
                         <p class="eyebrow">Capability</p>
@@ -82,54 +99,84 @@
                     </div>
                     <div class="progress-list">
                         <div class="progress-item reveal">
-                            <div class="progress-meta">
-                                <span>Mobile product design</span>
-                                <strong>96%</strong>
-                            </div>
-                            <div class="progress-track"><span style="width: 96%"></span></div>
+                            <div class="progress-meta"><span>Microsoft 365 Administration</span><strong>95%</strong></div>
+                            <div class="progress-track"><span style="width: 95%"></span></div>
                         </div>
                         <div class="progress-item reveal">
-                            <div class="progress-meta">
-                                <span>Portfolio and landing pages</span>
-                                <strong>94%</strong>
-                            </div>
-                            <div class="progress-track"><span style="width: 94%"></span></div>
+                            <div class="progress-meta"><span>Systems Administration</span><strong>92%</strong></div>
+                            <div class="progress-track"><span style="width: 92%"></span></div>
                         </div>
                         <div class="progress-item reveal">
-                            <div class="progress-meta">
-                                <span>User experience structure</span>
-                                <strong>90%</strong>
-                            </div>
-                            <div class="progress-track"><span style="width: 90%"></span></div>
+                            <div class="progress-meta"><span>Network Engineering</span><strong>88%</strong></div>
+                            <div class="progress-track"><span style="width: 88%"></span></div>
                         </div>
                         <div class="progress-item reveal">
-                            <div class="progress-meta">
-                                <span>Creative product presentation</span>
-                                <strong>93%</strong>
-                            </div>
-                            <div class="progress-track"><span style="width: 93%"></span></div>
+                            <div class="progress-meta"><span>Security &amp; Identity Management</span><strong>85%</strong></div>
+                            <div class="progress-track"><span style="width: 85%"></span></div>
                         </div>
                     </div>
                 </div>
             </section>
 
             <section class="section section-light">
+                <div class="container">
+                    <div class="section-heading reveal">
+                        <p class="eyebrow">Proficiency</p>
+                        <h2>Core platform proficiency.</h2>
+                    </div>
+                    <div class="meter-grid" data-stagger>
+                        <div class="meter-card reveal">
+                            <div class="meter">
+                                <svg viewBox="0 0 128 128"><circle class="meter-track" cx="64" cy="64" r="54"></circle><circle class="meter-value" data-percent="92" cx="64" cy="64" r="54"></circle></svg>
+                                <span class="meter-percent">92%</span>
+                            </div>
+                            <p class="meter-label">Microsoft 365 Ecosystem</p>
+                        </div>
+                        <div class="meter-card reveal">
+                            <div class="meter">
+                                <svg viewBox="0 0 128 128"><circle class="meter-track" cx="64" cy="64" r="54"></circle><circle class="meter-value" data-percent="88" cx="64" cy="64" r="54"></circle></svg>
+                                <span class="meter-percent">88%</span>
+                            </div>
+                            <p class="meter-label">Networking</p>
+                        </div>
+                        <div class="meter-card reveal">
+                            <div class="meter">
+                                <svg viewBox="0 0 128 128"><circle class="meter-track" cx="64" cy="64" r="54"></circle><circle class="meter-value" data-percent="80" cx="64" cy="64" r="54"></circle></svg>
+                                <span class="meter-percent">80%</span>
+                            </div>
+                            <p class="meter-label">PowerShell Automation</p>
+                        </div>
+                        <div class="meter-card reveal">
+                            <div class="meter">
+                                <svg viewBox="0 0 128 128"><circle class="meter-track" cx="64" cy="64" r="54"></circle><circle class="meter-value" data-percent="78" cx="64" cy="64" r="54"></circle></svg>
+                                <span class="meter-percent">78%</span>
+                            </div>
+                            <p class="meter-label">Azure Cloud</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section section-dark">
+                <div class="bg-grid"></div>
                 <div class="container stack-panel reveal">
                     <div>
-                        <p class="eyebrow">Tools and Ideas</p>
-                        <h2>What I enjoy building with.</h2>
+                        <p class="eyebrow">Tech Stack</p>
+                        <h2>Tools and platforms I work in.</h2>
                     </div>
-                    <div class="tag-wall">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-                        <span>Responsive Design</span>
-                        <span>Landing Pages</span>
-                        <span>App UI</span>
-                        <span>Story-driven Product Design</span>
-                        <span>Faith-tech Concepts</span>
-                        <span>Design Presentation</span>
-                        <span>Content Architecture</span>
+                    <div class="tag-wall left">
+                        <span>Microsoft 365</span>
+                        <span>Entra ID</span>
+                        <span>Intune</span>
+                        <span>Exchange Online</span>
+                        <span>SharePoint</span>
+                        <span>Teams</span>
+                        <span>Networking</span>
+                        <span>Active Directory</span>
+                        <span>Windows Server</span>
+                        <span>PowerShell</span>
+                        <span>Azure</span>
+                        <span>Security Administration</span>
                     </div>
                 </div>
             </section>
@@ -139,7 +186,7 @@
             <div class="container footer-row">
                 <div>
                     <p class="footer-title">Joshua Bajao</p>
-                    <p class="footer-copy">Clickable, responsive, premium digital experiences.</p>
+                    <p class="footer-copy">Enterprise-grade Microsoft 365, network, and systems skills.</p>
                 </div>
                 <div class="footer-links">
                     <a href="projects.html">Projects</a>
@@ -150,6 +197,9 @@
         </footer>
     </div>
 
-    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

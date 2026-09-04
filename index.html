@@ -1,17 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joshua Bajao | Luxury Portfolio</title>
-    <meta name="description" content="Joshua Bajao is a mobile app developer creating polished digital products, including the Can I Pray for You app for Christian social connection and prayer support.">
+    <title>Joshua Bajao | Microsoft 365 Administrator &amp; Systems Engineer</title>
+    <meta name="description" content="Joshua Bajao is a Microsoft 365 Administrator, Network Engineer, and Systems Administrator building secure, reliable enterprise IT environments across M365, Azure, and on-prem infrastructure.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body data-page="home">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="loader" aria-hidden="true">
+        <div class="loader-mark"><span>J</span><span>B</span><span>·</span><span>I</span><span>T</span></div>
+        <div class="loader-bar"><span></span></div>
+    </div>
+
     <div class="site-shell">
         <header class="topbar">
             <nav class="navbar container">
@@ -19,7 +25,7 @@
                     <span class="brand-mark">JB</span>
                     <span class="brand-text">
                         <strong>Joshua Bajao</strong>
-                        <small>Mobile App Developer</small>
+                        <small>Microsoft 365 &amp; Systems Engineer</small>
                     </span>
                 </a>
                 <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Open navigation">
@@ -35,54 +41,133 @@
                         <li><a href="projects.html" class="nav-link">Projects</a></li>
                         <li><a href="contact.html" class="nav-link">Contact</a></li>
                     </ul>
-                    <a href="contact.html" class="button button-ghost">Book a Conversation</a>
+                    <a href="contact.html" class="button button-ghost" data-magnetic>Book a Call</a>
                 </div>
             </nav>
         </header>
 
-        <main>
-            <section class="hero hero-home">
-                <div class="hero-backdrop"></div>
+        <main id="main">
+            <section class="hero hero-home mouse-glow">
+                <div class="bg-grid"></div>
+                <div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
+                <canvas data-particle-field aria-hidden="true" style="position:absolute; inset:0; z-index:1; width:100%; height:100%;"></canvas>
                 <div class="floating-orb orb-one"></div>
                 <div class="floating-orb orb-two"></div>
+                <div class="tech-orbit" aria-hidden="true">
+                    <span class="tech-badge" style="top:14%; left:6%; animation-delay:0s;"><i class="fa-brands fa-microsoft"></i></span>
+                    <span class="tech-badge" style="top:68%; left:3%; animation-delay:1.4s;"><i class="fa-solid fa-cloud"></i></span>
+                    <span class="tech-badge" style="top:22%; right:5%; animation-delay:0.8s;"><i class="fa-solid fa-network-wired"></i></span>
+                    <span class="tech-badge" style="top:74%; right:8%; animation-delay:2.1s;"><i class="fa-solid fa-shield-halved"></i></span>
+                </div>
+
                 <div class="container hero-grid">
-                    <div class="hero-copy reveal">
-                        <p class="eyebrow">Luxury Digital Craft</p>
-                        <h1>Building mobile experiences that feel elegant, useful, and deeply human.</h1>
-                        <p class="hero-lead">I design and develop premium apps with clear product thinking, refined interfaces, and meaningful features. My current portfolio highlights social, faith-based, and community-driven mobile products.</p>
+                    <div class="hero-copy reveal" data-reveal="left">
+                        <div class="kicker-row">
+                            <span class="status-dot"></span>
+                            <p class="eyebrow" style="margin:0;">Available for IT &amp; Cloud Engineering Roles</p>
+                        </div>
+                        <h1>Engineering reliable, secure systems across <span class="grad-text">Microsoft 365, networks, and the enterprise cloud.</span></h1>
+                        <div class="type-row">
+                            <span>I work as a</span>
+                            <span class="type-target" data-typewriter='["Microsoft 365 Administrator", "Network Engineer", "IT Support Engineer", "Systems Administrator"]'></span>
+                        </div>
+                        <p class="hero-lead">I design, deploy, and support enterprise IT environments — from Microsoft 365 tenants and Entra ID identity to on-prem networks and endpoint device management. My focus is uptime, security, and a smooth experience for every user I support.</p>
                         <div class="hero-actions">
-                            <a href="projects.html" class="button button-primary">View Featured Projects</a>
-                            <a href="contact.html" class="button button-secondary">Start a Project</a>
+                            <a href="contact.html" class="button button-primary" data-magnetic>Contact Me</a>
+                            <a href="assets/Joshua-Bajao-CV.pdf" class="button button-secondary" data-magnetic download>Download CV</a>
+                            <a href="projects.html" class="button button-ghost" data-magnetic>View Projects</a>
                         </div>
                         <div class="hero-metrics">
                             <article>
-                                <strong>3+</strong>
-                                <span>Years building apps and product experiences</span>
+                                <strong data-counter="3" data-suffix="+">0</strong>
+                                <span>Years supporting enterprise IT environments</span>
                             </article>
                             <article>
-                                <strong>1</strong>
-                                <span>Flagship Christian social app concept in portfolio</span>
+                                <strong data-counter="500" data-suffix="+">0</strong>
+                                <span>Devices configured, imaged, and managed</span>
                             </article>
                             <article>
-                                <strong>100%</strong>
-                                <span>Focus on responsive, polished, clickable interfaces</span>
+                                <strong data-counter="1200" data-suffix="+">0</strong>
+                                <span>End users supported across M365 and networks</span>
                             </article>
                         </div>
                     </div>
-                    <div class="hero-card reveal reveal-delay">
+                    <div class="hero-card reveal reveal-delay" data-reveal="right">
                         <div class="portrait-wrap">
                             <img src="JOSHUA.jpeg" alt="Joshua Bajao portrait" class="portrait">
                         </div>
                         <div class="hero-card-content">
                             <p class="card-label">Featured Role</p>
-                            <h2>Mobile App Developer</h2>
-                            <p>I build app flows, product UI systems, and user experiences that turn ideas into premium digital products.</p>
+                            <h2>Systems &amp; Microsoft 365 Administrator</h2>
+                            <p>I keep enterprise environments running: identity, endpoints, networks, and the Microsoft 365 stack, all working together securely.</p>
                             <div class="chip-row">
-                                <span class="chip">Flutter-ready UX</span>
-                                <span class="chip">Product strategy</span>
-                                <span class="chip">Faith-tech ideas</span>
+                                <span class="chip">Microsoft 365</span>
+                                <span class="chip">Azure &amp; Entra ID</span>
+                                <span class="chip">Network Engineering</span>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="scroll-cue" aria-hidden="true">
+                    <span>Scroll</span>
+                    <span class="scroll-cue-line"></span>
+                </div>
+            </section>
+
+            <section class="section section-light">
+                <div class="container">
+                    <div class="section-heading reveal">
+                        <p class="eyebrow">Where to Look</p>
+                        <h2>A portfolio built around enterprise IT depth.</h2>
+                    </div>
+                    <div class="feature-grid" data-stagger>
+                        <a class="feature-card reveal" href="about.html">
+                            <span class="feature-icon"><i class="fa-solid fa-user-large"></i></span>
+                            <h3>About</h3>
+                            <p>The engineer behind the tickets: how I think about uptime, security, and supporting real people.</p>
+                            <span class="feature-link">Discover more <i class="fa-solid fa-arrow-right"></i></span>
+                        </a>
+                        <a class="feature-card reveal" href="skills.html">
+                            <span class="feature-icon"><i class="fa-solid fa-layer-group"></i></span>
+                            <h3>Skills</h3>
+                            <p>Microsoft 365, Entra ID, Intune, networking, Active Directory, PowerShell, and Azure fundamentals.</p>
+                            <span class="feature-link">Explore expertise <i class="fa-solid fa-arrow-right"></i></span>
+                        </a>
+                        <a class="feature-card reveal" href="experience.html">
+                            <span class="feature-icon"><i class="fa-solid fa-timeline"></i></span>
+                            <h3>Experience</h3>
+                            <p>The progression from IT support to systems administration and network engineering work.</p>
+                            <span class="feature-link">Read timeline <i class="fa-solid fa-arrow-right"></i></span>
+                        </a>
+                        <a class="feature-card reveal" href="projects.html">
+                            <span class="feature-icon"><i class="fa-solid fa-diagram-project"></i></span>
+                            <h3>Projects</h3>
+                            <p>Real, deployed systems for device management, inventory tracking, and organizational operations.</p>
+                            <span class="feature-link">See projects <i class="fa-solid fa-arrow-right"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section section-dark">
+                <div class="container">
+                    <div class="section-heading reveal">
+                        <p class="eyebrow">Core Stack</p>
+                        <h2>The enterprise technologies I work in daily.</h2>
+                    </div>
+                    <div class="tech-grid" data-stagger>
+                        <article class="tech-card reveal"><i class="fa-brands fa-microsoft"></i><h4>Microsoft 365</h4><span>Tenant admin &amp; licensing</span></article>
+                        <article class="tech-card reveal"><i class="fa-solid fa-id-badge"></i><h4>Entra ID</h4><span>Identity &amp; access management</span></article>
+                        <article class="tech-card reveal"><i class="fa-solid fa-mobile-screen"></i><h4>Intune</h4><span>Endpoint &amp; device management</span></article>
+                        <article class="tech-card reveal"><i class="fa-solid fa-envelope-open-text"></i><h4>Exchange Online</h4><span>Mail flow &amp; compliance</span></article>
+                        <article class="tech-card reveal"><i class="fa-solid fa-people-roof"></i><h4>SharePoint</h4><span>Sites, libraries &amp; permissions</span></article>
+                        <article class="tech-card reveal"><i class="fa-brands fa-microsoft"></i><h4>Teams</h4><span>Collaboration &amp; voice admin</span></article>
+                        <article class="tech-card reveal"><i class="fa-solid fa-network-wired"></i><h4>Networking</h4><span>Switching, routing &amp; Wi-Fi</span></article>
+                        <article class="tech-card reveal"><i class="fa-solid fa-sitemap"></i><h4>Active Directory</h4><span>On-prem identity &amp; GPOs</span></article>
+                        <article class="tech-card reveal"><i class="fa-solid fa-server"></i><h4>Windows Server</h4><span>Infrastructure &amp; services</span></article>
+                        <article class="tech-card reveal"><i class="fa-solid fa-terminal"></i><h4>PowerShell</h4><span>Automation &amp; scripting</span></article>
+                        <article class="tech-card reveal"><i class="fa-solid fa-cloud"></i><h4>Azure</h4><span>Cloud infrastructure</span></article>
+                        <article class="tech-card reveal"><i class="fa-solid fa-shield-halved"></i><h4>Security Admin</h4><span>Policies, MFA &amp; compliance</span></article>
                     </div>
                 </div>
             </section>
@@ -90,78 +175,63 @@
             <section class="section section-light">
                 <div class="container">
                     <div class="section-heading reveal">
-                        <p class="eyebrow">Signature Focus</p>
-                        <h2>A refined portfolio with product depth.</h2>
+                        <p class="eyebrow">By the Numbers</p>
+                        <h2>Operational impact, measured.</h2>
                     </div>
-                    <div class="feature-grid">
-                        <a class="feature-card reveal" href="about.html">
-                            <span class="feature-icon"><i class="fa-solid fa-user-large"></i></span>
-                            <h3>About</h3>
-                            <p>See the story behind my work, the way I think, and the quality I bring into every build.</p>
-                            <span class="feature-link">Discover more</span>
-                        </a>
-                        <a class="feature-card reveal" href="skills.html">
-                            <span class="feature-icon"><i class="fa-solid fa-layer-group"></i></span>
-                            <h3>Skills</h3>
-                            <p>Explore my mobile product design, front-end delivery, brand thinking, and launch capabilities.</p>
-                            <span class="feature-link">Explore expertise</span>
-                        </a>
-                        <a class="feature-card reveal" href="experience.html">
-                            <span class="feature-icon"><i class="fa-solid fa-timeline"></i></span>
-                            <h3>Experience</h3>
-                            <p>Review the progression of my creative and technical work across digital product development.</p>
-                            <span class="feature-link">Read timeline</span>
-                        </a>
-                        <a class="feature-card reveal" href="projects.html">
-                            <span class="feature-icon"><i class="fa-solid fa-mobile-screen-button"></i></span>
-                            <h3>Projects</h3>
-                            <p>Open detailed project cards, product highlights, and the app concept that defines this portfolio.</p>
-                            <span class="feature-link">See projects</span>
-                        </a>
+                    <div class="stats-grid" data-stagger>
+                        <div class="stat-card reveal">
+                            <div class="stat-value"><span class="grad-text" data-counter="500" data-suffix="+">0</span></div>
+                            <p class="stat-label">Devices Configured</p>
+                        </div>
+                        <div class="stat-card reveal">
+                            <div class="stat-value"><span class="grad-text" data-counter="1200" data-suffix="+">0</span></div>
+                            <p class="stat-label">Users Supported</p>
+                        </div>
+                        <div class="stat-card reveal">
+                            <div class="stat-value"><span class="grad-text" data-counter="40" data-suffix="+">0</span></div>
+                            <p class="stat-label">Projects Completed</p>
+                        </div>
+                        <div class="stat-card reveal">
+                            <div class="stat-value"><span class="grad-text" data-counter="25" data-suffix="+">0</span></div>
+                            <p class="stat-label">Network Deployments</p>
+                        </div>
+                        <div class="stat-card reveal">
+                            <div class="stat-value"><span class="grad-text" data-counter="3" data-suffix="+">0</span></div>
+                            <p class="stat-label">Years Experience</p>
+                        </div>
                     </div>
+                    <p class="text-muted" style="margin-top:1.2rem; font-size:0.8rem;">Figures shown are placeholder targets — swap in your verified numbers.</p>
                 </div>
             </section>
 
             <section class="section section-dark showcase-band">
+                <div class="bg-grid"></div>
                 <div class="container showcase-grid">
-                    <div class="showcase-copy reveal">
-                        <p class="eyebrow">Flagship Product</p>
-                        <h2>Can I Pray for You</h2>
-                        <p>A Christian social media app designed around prayer requests, follow-up connections, testimony stories, Bible API content, and preaching recap voice playback through TTS.</p>
+                    <div class="showcase-copy reveal" data-reveal="left">
+                        <p class="eyebrow">Featured Systems Project</p>
+                        <h2>Nebras Device &amp; Property Management System</h2>
+                        <p>A centralized operations platform built to track devices, property assignments, and asset lifecycle across an organization — the same operational thinking behind enterprise endpoint and inventory management.</p>
                         <ul class="check-list">
-                            <li>Prayer request posting and caring community interaction</li>
-                            <li>Follow-up flows to continue support beyond one message</li>
-                            <li>Stories, scripture discovery, and Bible-integrated content</li>
-                            <li>Preaching recap audio generated with text-to-speech</li>
+                            <li>Centralized device and asset record keeping</li>
+                            <li>Assignment tracking and ownership history</li>
+                            <li>Status visibility across the full asset lifecycle</li>
+                            <li>Built and deployed as a live, working system</li>
                         </ul>
-                        <a href="projects.html#pray-for-you" class="button button-primary">Open Project Details</a>
+                        <a href="projects.html#nebras-device-management" class="button button-primary" data-magnetic>Open Project Details</a>
                     </div>
-                    <div class="showcase-panel reveal reveal-delay">
+                    <div class="showcase-panel reveal reveal-delay" data-reveal="right">
                         <div class="app-window">
-                            <div class="app-window-bar">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
+                            <div class="app-window-bar"><span></span><span></span><span></span></div>
                             <div class="app-window-content">
                                 <div class="app-story-card">
-                                    <p class="app-tag">Live Product Concept</p>
-                                    <h3>Prayer-led social experience</h3>
-                                    <p>Crafted to feel warm, modern, supportive, and spiritually grounded.</p>
+                                    <p class="app-tag">Live Deployed System</p>
+                                    <h3>Operations-first asset tracking</h3>
+                                    <p>Built for clarity: who has what, where it is, and its current status.</p>
                                 </div>
                                 <div class="mini-cards">
-                                    <article>
-                                        <strong>Prayer Feed</strong>
-                                        <span>Requests and support updates</span>
-                                    </article>
-                                    <article>
-                                        <strong>Bible API</strong>
-                                        <span>Scripture discovery in context</span>
-                                    </article>
-                                    <article>
-                                        <strong>TTS Recap</strong>
-                                        <span>Preaching highlights in voice form</span>
-                                    </article>
+                                    <article><strong>Asset Registry</strong><span>Structured device &amp; property records</span></article>
+                                    <article><strong>Assignment Log</strong><span>Ownership and hand-off history</span></article>
+                                    <article><strong>Status Tracking</strong><span>Lifecycle visibility at a glance</span></article>
                                 </div>
                             </div>
                         </div>
@@ -173,12 +243,12 @@
                 <div class="container cta-panel reveal">
                     <div>
                         <p class="eyebrow">Open for Work</p>
-                        <h2>Need a polished app concept or a luxury web presence?</h2>
-                        <p>I am available for mobile app design, product presentation sites, landing pages, and creative digital experiences.</p>
+                        <h2>Need dependable Microsoft 365, network, or systems support?</h2>
+                        <p>I'm available for IT support, systems administration, M365 tenant management, and network engineering work.</p>
                     </div>
                     <div class="cta-actions">
-                        <a href="contact.html" class="button button-primary">Contact Me</a>
-                        <a href="about.html" class="button button-secondary">Know My Story</a>
+                        <a href="contact.html" class="button button-primary" data-magnetic>Contact Me</a>
+                        <a href="about.html" class="button button-secondary" data-magnetic>Know My Story</a>
                     </div>
                 </div>
             </section>
@@ -188,7 +258,7 @@
             <div class="container footer-row">
                 <div>
                     <p class="footer-title">Joshua Bajao</p>
-                    <p class="footer-copy">Mobile app developer focused on elegant digital products and meaningful product stories.</p>
+                    <p class="footer-copy">Microsoft 365 Administrator, Network Engineer, and Systems Administrator focused on secure, reliable IT operations.</p>
                 </div>
                 <div class="footer-links">
                     <a href="mailto:bajaojoshua2@gmail.com">Email</a>
@@ -200,6 +270,10 @@
         </footer>
     </div>
 
-    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
