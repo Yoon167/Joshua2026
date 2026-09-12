@@ -328,6 +328,62 @@
         window.addEventListener('keydown', (e) => { if (e.key === 'Escape') doClose(); });
     }
 
+    /* ---------------- Certificate carousel (3D rotating slide) ---------------- */
+    document.querySelectorAll('[data-cert-carousel]').forEach((carousel) => {
+        const track = carousel.querySelector('.cert-carousel-track');
+        const items = Array.from(carousel.querySelectorAll('.cert-carousel-item'));
+        if (!track || items.length < 2) return;
+
+        const seg = 360 / items.length;
+        const radius = Math.round((items[0].getBoundingClientRect().width || 380) / 2 / Math.tan(Math.PI / items.length));
+        track.style.setProperty('--seg', `${seg}deg`);
+        items.forEach((item, i) => {
+            item.style.setProperty('--i', i);
+            item.style.setProperty('--radius', `${radius}px`);
+        });
+        carousel.classList.add('is-3d');
+
+        const controls = document.createElement('div');
+        controls.className = 'cert-carousel-controls';
+        const prevBtn = document.createElement('button');
+        prevBtn.type = 'button'; prevBtn.className = 'cert-carousel-btn'; prevBtn.setAttribute('aria-label', 'Previous certificate'); prevBtn.textContent = '‹';
+        const dots = document.createElement('div');
+        dots.className = 'cert-carousel-dots';
+        items.forEach((_, i) => {
+            const dot = document.createElement('button');
+            dot.type = 'button'; dot.className = 'cert-carousel-dot';
+            dot.setAttribute('aria-label', `Go to certificate ${i + 1}`);
+            dot.addEventListener('click', () => goTo(i));
+            dots.append(dot);
+        });
+        const nextBtn = document.createElement('button');
+        nextBtn.type = 'button'; nextBtn.className = 'cert-carousel-btn'; nextBtn.setAttribute('aria-label', 'Next certificate'); nextBtn.textContent = '›';
+        controls.append(prevBtn, dots, nextBtn);
+        carousel.append(controls);
+
+        let current = 0;
+        const dotEls = Array.from(dots.children);
+        const render = () => {
+            track.style.setProperty('--rot', -current * seg);
+            items.forEach((item, i) => item.classList.toggle('is-active', i === current));
+            dotEls.forEach((dot, i) => dot.classList.toggle('is-active', i === current));
+        };
+        const goTo = (i) => { current = (i + items.length) % items.length; render(); };
+        prevBtn.addEventListener('click', () => goTo(current - 1));
+        nextBtn.addEventListener('click', () => goTo(current + 1));
+        render();
+
+        if (!reduced) {
+            let timer = window.setInterval(() => goTo(current + 1), 4200);
+            const stop = () => window.clearInterval(timer);
+            const start = () => { stop(); timer = window.setInterval(() => goTo(current + 1), 4200); };
+            carousel.addEventListener('mouseenter', stop);
+            carousel.addEventListener('mouseleave', start);
+            carousel.addEventListener('focusin', stop);
+            carousel.addEventListener('focusout', start);
+        }
+    });
+
     /* ---------------- Contact form floating labels + validation UX ---------------- */
     document.querySelectorAll('.line-field input, .line-field textarea').forEach((input) => {
         const field = input.closest('.line-field');

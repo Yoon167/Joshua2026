@@ -392,12 +392,46 @@ ul { list-style: none; }
 .cert-row.is-empty h3 { color: var(--fg-2); font-style: italic; }
 .cert-row-status { font-family: var(--f-mono); font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.06em; padding: 0.4rem 0.7rem; border: 1px solid var(--hair-strong); border-radius: 999px; color: var(--fg-2); }
 
-.cert-gallery { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1px; background: var(--hair); border: 1px solid var(--hair); margin-top: 1.6rem; }
-.cert-gallery-item { position: relative; display: block; background: var(--ink-1); aspect-ratio: 3/4; overflow: hidden; }
-.cert-gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform var(--dur-2) var(--ease-out); }
-.cert-gallery-item:hover img { transform: scale(1.06); }
-.cert-gallery-item span { position: absolute; left: 0; right: 0; bottom: 0; padding: 0.7rem 0.8rem; font-family: var(--f-mono); font-size: 0.66rem; letter-spacing: 0.04em; text-transform: uppercase; color: var(--fg-0); background: linear-gradient(to top, rgba(5, 5, 7, 0.85), transparent); }
-@media (max-width: 860px) { .cert-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+/* Static fallback grid (no-JS / reduced-motion) — landscape cards */
+.cert-carousel { margin-top: 1.8rem; }
+.cert-carousel-track { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1px; background: var(--hair); border: 1px solid var(--hair); }
+.cert-carousel-item { position: relative; display: block; background: var(--ink-1); aspect-ratio: 17/12; overflow: hidden; }
+.cert-carousel-item img { width: 100%; height: 100%; object-fit: cover; transition: transform var(--dur-2) var(--ease-out); }
+.cert-carousel-item:hover img { transform: scale(1.06); }
+.cert-carousel-item span { position: absolute; left: 0; right: 0; bottom: 0; padding: 0.7rem 0.8rem; font-family: var(--f-mono); font-size: 0.66rem; letter-spacing: 0.04em; text-transform: uppercase; color: var(--fg-0); background: linear-gradient(to top, rgba(5, 5, 7, 0.85), transparent); }
+@media (max-width: 860px) { .cert-carousel-track { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+/* 3D rotating carousel — enabled via JS (adds .is-3d) */
+.cert-carousel.is-3d .cert-carousel-stage { position: relative; height: clamp(280px, 34vw, 440px); perspective: 2200px; }
+.cert-carousel.is-3d .cert-carousel-track {
+    display: block; position: absolute; inset: 0; background: none; border: none;
+    transform-style: preserve-3d; transform: rotateY(calc(var(--rot, 0) * 1deg));
+    transition: transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.cert-carousel.is-3d .cert-carousel-item {
+    position: absolute; inset: 0; margin: auto; width: min(560px, 74%); aspect-ratio: 17/12;
+    border: 1px solid var(--hair-strong);
+    backface-visibility: hidden;
+    transform: rotateY(calc(var(--i) * var(--seg, 90deg))) translateZ(var(--radius, 230px));
+    opacity: 0.3; transition: opacity 0.7s ease, box-shadow 0.7s ease;
+}
+.cert-carousel.is-3d .cert-carousel-item.is-active { opacity: 1; box-shadow: 0 30px 70px -22px rgba(0, 0, 0, 0.6); z-index: 2; }
+.cert-carousel.is-3d .cert-carousel-item span { opacity: 0; transition: opacity var(--dur-2) var(--ease-out); }
+.cert-carousel.is-3d .cert-carousel-item.is-active span { opacity: 1; }
+.cert-carousel.is-3d .cert-carousel-item:not(.is-active) { pointer-events: none; }
+
+.cert-carousel-controls { display: flex; align-items: center; justify-content: center; gap: 1.2rem; margin-top: 1.8rem; }
+.cert-carousel-btn {
+    width: 2.6rem; height: 2.6rem; border-radius: 50%; border: 1px solid var(--hair-strong);
+    background: transparent; color: var(--fg-0); font-size: 1.1rem; line-height: 1; cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    transition: background var(--dur-2) var(--ease-out), transform var(--dur-1) var(--ease-out), border-color var(--dur-2);
+}
+.cert-carousel-btn:hover { background: var(--hair); border-color: var(--signal); transform: scale(1.08); }
+.cert-carousel-dots { display: flex; gap: 0.55rem; }
+.cert-carousel-dot { width: 0.5rem; height: 0.5rem; border-radius: 50%; border: none; padding: 0; background: var(--hair-strong); cursor: pointer; transition: background var(--dur-2) var(--ease-out), transform var(--dur-2) var(--ease-out); }
+.cert-carousel-dot.is-active { background: var(--signal); transform: scale(1.35); }
+@media (prefers-reduced-motion: reduce) { .cert-carousel.is-3d .cert-carousel-track { transition: none; } }
 
 /* ==========================================================================
    Project showcase — alternating full-bleed rows
