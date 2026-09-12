@@ -392,6 +392,13 @@ ul { list-style: none; }
 .cert-row.is-empty h3 { color: var(--fg-2); font-style: italic; }
 .cert-row-status { font-family: var(--f-mono); font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.06em; padding: 0.4rem 0.7rem; border: 1px solid var(--hair-strong); border-radius: 999px; color: var(--fg-2); }
 
+.cert-gallery { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1px; background: var(--hair); border: 1px solid var(--hair); margin-top: 1.6rem; }
+.cert-gallery-item { position: relative; display: block; background: var(--ink-1); aspect-ratio: 3/4; overflow: hidden; }
+.cert-gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform var(--dur-2) var(--ease-out); }
+.cert-gallery-item:hover img { transform: scale(1.06); }
+.cert-gallery-item span { position: absolute; left: 0; right: 0; bottom: 0; padding: 0.7rem 0.8rem; font-family: var(--f-mono); font-size: 0.66rem; letter-spacing: 0.04em; text-transform: uppercase; color: var(--fg-0); background: linear-gradient(to top, rgba(5, 5, 7, 0.85), transparent); }
+@media (max-width: 860px) { .cert-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
 /* ==========================================================================
    Project showcase — alternating full-bleed rows
    ========================================================================== */
