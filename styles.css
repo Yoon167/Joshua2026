@@ -453,6 +453,14 @@ ul { list-style: none; }
 .showcase-row.is-pending .showcase-media { filter: grayscale(1) brightness(0.6); }
 .showcase-row.is-pending { cursor: pointer; }
 
+.showcase-media.is-slider { aspect-ratio: 16/9; }
+.showcase-media.is-slider img { position: absolute; inset: 0; opacity: 0; transform: scale(1); transition: opacity 0.7s ease; }
+.showcase-media.is-slider img.is-active { opacity: 1; z-index: 1; }
+.shot-dots { position: absolute; left: 0; right: 0; bottom: 16px; z-index: 3; display: flex; justify-content: center; gap: 0.45rem; }
+.shot-dot { width: 7px; height: 7px; border-radius: 50%; border: none; padding: 0; background: rgba(255, 255, 255, 0.35); cursor: pointer; transition: background var(--dur-2) var(--ease-out), transform var(--dur-2) var(--ease-out); }
+.shot-dot.is-active { background: #fff; transform: scale(1.35); }
+@media (prefers-reduced-motion: reduce) { .showcase-media.is-slider img { transition: none; } }
+
 @media (max-width: 860px) {
     .showcase-row, .showcase-row.is-reverse { grid-template-columns: 1fr; direction: ltr; }
 }

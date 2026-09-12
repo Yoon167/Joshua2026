@@ -384,6 +384,41 @@
         }
     });
 
+    /* ---------------- Project screenshot slider (fade) ---------------- */
+    document.querySelectorAll('[data-shot-slider]').forEach((slider) => {
+        const shots = Array.from(slider.querySelectorAll('img'));
+        if (shots.length < 2) return;
+
+        const dots = document.createElement('div');
+        dots.className = 'shot-dots';
+        shots.forEach((_, i) => {
+            const dot = document.createElement('button');
+            dot.type = 'button'; dot.className = 'shot-dot';
+            dot.setAttribute('aria-label', `Show screenshot ${i + 1}`);
+            dot.addEventListener('click', () => goTo(i));
+            dots.append(dot);
+        });
+        slider.append(dots);
+
+        let current = shots.findIndex((img) => img.classList.contains('is-active'));
+        if (current < 0) current = 0;
+        const dotEls = Array.from(dots.children);
+        const render = () => {
+            shots.forEach((img, i) => img.classList.toggle('is-active', i === current));
+            dotEls.forEach((dot, i) => dot.classList.toggle('is-active', i === current));
+        };
+        const goTo = (i) => { current = (i + shots.length) % shots.length; render(); };
+        render();
+
+        if (!reduced) {
+            let timer = window.setInterval(() => goTo(current + 1), 3200);
+            const stop = () => window.clearInterval(timer);
+            const start = () => { stop(); timer = window.setInterval(() => goTo(current + 1), 3200); };
+            slider.addEventListener('mouseenter', stop);
+            slider.addEventListener('mouseleave', start);
+        }
+    });
+
     /* ---------------- Contact form floating labels + validation UX ---------------- */
     document.querySelectorAll('.line-field input, .line-field textarea').forEach((input) => {
         const field = input.closest('.line-field');
