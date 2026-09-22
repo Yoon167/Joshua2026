@@ -487,8 +487,21 @@ ul { list-style: none; }
    About / narrative page furniture
    ========================================================================== */
 .split { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: clamp(2rem, 5vw, 5rem); align-items: center; }
-.split-media { position: relative; aspect-ratio: 4/5; overflow: hidden; }
-.split-media img { width: 100%; height: 100%; object-fit: cover; }
+.split-media { position: relative; aspect-ratio: 1/1; max-width: 380px; margin-inline: auto; }
+.split-media-float { width: 100%; height: 100%; animation: photoFloat 6s ease-in-out infinite; }
+.split-media img {
+    width: 100%; height: 100%; object-fit: cover; border-radius: 50%;
+    -webkit-mask-image: radial-gradient(circle, #000 62%, transparent 100%);
+            mask-image: radial-gradient(circle, #000 62%, transparent 100%);
+    filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.35));
+}
+@keyframes photoFloat {
+    0%, 100% { transform: translate(0, 0) rotate(0deg); }
+    25% { transform: translate(6px, -16px) rotate(1deg); }
+    50% { transform: translate(-4px, -26px) rotate(-1deg); }
+    75% { transform: translate(-8px, -10px) rotate(0.5deg); }
+}
+@media (prefers-reduced-motion: reduce) { .split-media-float { animation: none; } }
 .split-body h2 { font-size: clamp(1.7rem, 3.4vw, 2.5rem); margin-bottom: 1.2rem; }
 .split-body p { margin-bottom: 1rem; max-width: 56ch; }
 .line-facts { margin-top: 1.8rem; border-top: 1px solid var(--hair); }
